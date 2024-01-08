@@ -120,16 +120,16 @@ function js() {
   .pipe(browsersync.stream())
 }
 
-function avifWebp() {
-  return src("app/img/*.{jpg,png,jpeg}")
-  .pipe(newer("dist/img/"))
-  .pipe(gulpAvif({
-    quality: 50
-  }))
-  .pipe(src("app/img/*.{jpg,png,jpeg}"))
-  .pipe(webp({quality: 90}))
-  .pipe(dest("dist/img/"))
-}
+// function avifWebp() {
+//   return src("app/img/*.{jpg,png,jpeg}")
+//   .pipe(newer("dist/img/"))
+//   .pipe(gulpAvif({
+//     quality: 50
+//   }))
+//   .pipe(src("app/img/*.{jpg,png,jpeg}"))
+//   .pipe(webp({quality: 90}))
+//   .pipe(dest("dist/img/"))
+// }
 
 function images() {
   return src("app/img/**")
@@ -157,7 +157,7 @@ function watchFiles() {
   gulp.watch(["app/scss/**/*.scss"], css);
   gulp.watch(["app/js/**/*.js"], js);
   gulp.watch(["app/img/**"], images);
-  gulp.watch(["app/img/*.{png,jpg,jpeg}"], avifWebp);
+  // gulp.watch(["app/img/*.{png,jpg,jpeg}"], avifWebp);
   gulp.watch(["app/css_libs/**"], cssLibs);
   gulp.watch(["app/js_libs/**"], jsLibs);
 }
@@ -171,14 +171,14 @@ function clean() {
   )
 }
 
-let build = gulp.series(clean, gulp.parallel(gulpPug, css, avifWebp, images, js, cssLibs, jsLibs));
+let build = gulp.series(clean, gulp.parallel(gulpPug, css, /* avifWebp,*/ images, js, cssLibs, jsLibs));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.pug = gulpPug;
 exports.fonts = fonts;
 exports.images = images;
-exports.gulpAvif = avifWebp;
-exports.webp = avifWebp;
+// exports.gulpAvif = avifWebp;
+// exports.webp = avifWebp;
 exports.js = js;
 exports.css = css;
 exports.build = build;

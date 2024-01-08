@@ -1,0 +1,20 @@
+.address-list {
+  @include list-reset;
+}
+
+.address-list__item:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.address-list__text {
+  padding-left: 34px;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--color-white);
+  background-image: url("../img/place-ic.svg");
+  background-position: top 0 left 0;
+  background-size: auto;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,23 @@
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.footer-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer-list__title {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--color-white);
+}
+
+.footer-list__content {
+  margin-left: 0;
+}

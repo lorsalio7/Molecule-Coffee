@@ -1,0 +1,11 @@
+.partners-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partners-list__logo {
+  display: block;
+  margin-right: 16px;
+  margin-bottom: 11px;
+  object-fit: contain;
+}

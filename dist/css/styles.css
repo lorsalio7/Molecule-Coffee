@@ -391,6 +391,8 @@ template {
   /* #000 */
   --color-border: rgb(208, 208, 208);
   /* #d0d0d0 */
+  --color-eclipse: rgb(39, 22, 17);
+  /* #271611 */
   --header-height: 102px;
   --side-gap: 188px;
 }
@@ -414,7 +416,7 @@ template {
 }
 
 .container {
-  --container-width: 1440px;
+  --container-width: 1470px;
   margin: 0 auto;
   padding: 0 15px;
   max-width: var(--container-width);
@@ -571,8 +573,125 @@ body {
 }
 
 .site-footer {
-  padding: 30px 0;
-  text-align: center;
-  color: #fff;
-  background-color: #313a6b;
+  background-color: var(--color-eclipse);
+}
+
+.site-footer__list {
+  padding: 88px 50px;
+}
+
+.site-footer__partners-list {
+  margin-right: -16px;
+  margin-bottom: -11px;
+  max-width: 564px;
+}
+
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+}
+
+.footer-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer-list__title {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--color-white);
+}
+
+.footer-list__content {
+  margin-left: 0;
+}
+
+.address-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.address-list__item:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.address-list__text {
+  padding-left: 34px;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--color-white);
+  background-image: url("../img/place-ic.svg");
+  background-position: top 0 left 0;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.partners-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.partners-list__logo {
+  display: block;
+  margin-right: 16px;
+  margin-bottom: 11px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.socials {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.socials__item:not(:last-of-type) {
+  margin-right: 21px;
+}
+
+.socials__link {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-position: center;
+  background-size: 26px;
+  background-repeat: no-repeat;
+}
+
+.socials__link--vk {
+  background-image: url("../img/vk-ic.svg");
+}
+
+.socials__link--youtube {
+  background-image: url("../img/youtube-ic.svg");
+}
+
+.socials__link--telegram {
+  background-image: url("../img/telegram-ic.svg");
+}
+
+.socials__link--tiktok {
+  background-image: url("../img/tiktok-ic.svg");
 }

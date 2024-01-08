@@ -1,0 +1,35 @@
+.socials {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.socials__item:not(:last-of-type) {
+  margin-right: 21px;
+}
+
+.socials__link {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-position: center;
+  background-size: 26px;
+  background-repeat: no-repeat;
+
+  &--vk {
+    background-image: url("../img/vk-ic.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/youtube-ic.svg");
+  }
+
+  &--telegram {
+    background-image: url("../img/telegram-ic.svg");
+  }
+
+  &--tiktok {
+    background-image: url("../img/tiktok-ic.svg");
+  }
+}
