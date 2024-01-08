@@ -1,0 +1,21 @@
+.site-navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  max-width: 750px;
+}
+
+.site-navigation__item:not(:last-child) {
+  margin-right: 76px;
+}
+
+.site-navigation__link {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-decoration: none;
+  color: var(--color-black);
+}

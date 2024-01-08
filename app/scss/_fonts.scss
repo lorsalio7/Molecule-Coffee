@@ -1,1 +1,5 @@
 /* @include font("$name", "$font-family", $weight, $style, $font-name-local, $font-name-local-alternate); */
+@include font("MontserratRegular", "Montserrat", 400, normal, "Montserrat Regular", "Montserrat-Regular");
+@include font("MontserratSemiBold", "Montserrat", 600, normal, "Montserrat SemiBold", "Montserrat-SemiBold");
+@include font("MontserratBold", "Montserrat", 700, normal, "Montserrat Bold", "Montserrat-Bold");
+@include font("PlayfairDisplayRegular", "Playfair Display", 400, normal, "Montserrat Bold", "Montserrat-Bold");

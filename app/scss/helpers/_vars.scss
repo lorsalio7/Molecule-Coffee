@@ -1,6 +1,9 @@
 :root {
-  --sans-serif: "Inter", "Helvetica", "Verdana", sans-serif;
+  --sans-serif: "Montserrat", "Helvetica", "Verdana", sans-serif;
   --serif: "Times New Roman", "Georgia", "Baskerville", serif;
   --color-white: rgb(255, 255, 255); /* #fff */
   --color-black: rgb(0, 0, 0); /* #000 */
+  --color-border: rgb(208, 208, 208); /* #d0d0d0 */
+  --header-height: 102px;
+  --side-gap: 188px;
 }

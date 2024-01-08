@@ -383,12 +383,16 @@ template {
 }
 
 :root {
-  --sans-serif: "Inter", "Helvetica", "Verdana", sans-serif;
+  --sans-serif: "Montserrat", "Helvetica", "Verdana", sans-serif;
   --serif: "Times New Roman", "Georgia", "Baskerville", serif;
   --color-white: rgb(255, 255, 255);
   /* #fff */
   --color-black: rgb(0, 0, 0);
   /* #000 */
+  --color-border: rgb(208, 208, 208);
+  /* #d0d0d0 */
+  --header-height: 102px;
+  --side-gap: 188px;
 }
 
 /* @include list-reset; */
@@ -410,7 +414,7 @@ template {
 }
 
 .container {
-  --container-width: 1200px;
+  --container-width: 1440px;
   margin: 0 auto;
   padding: 0 15px;
   max-width: var(--container-width);
@@ -437,6 +441,38 @@ template {
 }
 
 /* @include font("$name", "$font-family", $weight, $style, $font-name-local, $font-name-local-alternate); */
+
+@font-face {
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/MontserratRegular.woff2") format("woff2");
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../fonts/MontserratSemiBold.woff2") format("woff2");
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/MontserratBold.woff2") format("woff2");
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/PlayfairDisplayRegular.woff2") format("woff2");
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 html {
   -webkit-box-sizing: border-box;
@@ -481,10 +517,57 @@ body {
 }
 
 .site-header {
-  padding: 30px 0;
-  text-align: center;
-  color: #fff;
-  background-color: #315b6b;
+  position: relative;
+  z-index: 3;
+  border-bottom: 1px solid var(--color-border);
+  min-height: var(--header-height);
+}
+
+.site-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+}
+
+.site-header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 49px;
+  height: var(--header-height);
+  background-color: #fff;
+}
+
+.site-navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  max-width: 750px;
+}
+
+.site-navigation__item:not(:last-child) {
+  margin-right: 76px;
+}
+
+.site-navigation__link {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-decoration: none;
+  color: var(--color-black);
 }
 
 .site-footer {
