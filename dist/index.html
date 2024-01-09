@@ -25,7 +25,28 @@
           </nav>
         </div>
       </header>
-      <main class="main">Это из файла JSON</main>
+      <main class="main">
+        <section class="hero">
+          <div class="hero__container container">
+            <div class="hero__grid hero-grid"><span class="hero-grid__decor"></span><span class="hero-grid__decor"></span><span class="hero-grid__decor"></span><span class="hero-grid__decor"></span><span class="hero-grid__decor"></span><span class="hero-grid__decor"></span><img class="hero-grid__image hero-grid__image--first" src="img/hero-image-1.jpg" width="425" height="410" alt=""><span class="hero-grid__text hero-grid__text--first">Учись</span><img class="hero-grid__image hero-grid__image--second" src="img/hero-image-2.jpg" width="212" height="206" alt=""><span class="hero-grid__text hero-grid__text--second">Пей кофе</span><img class="hero-grid__image hero-grid__image--third" src="img/hero-image-3.jpg" width="373" height="469" alt=""><span class="hero-grid__text hero-grid__text--third">Отдыхай</span>
+              <form class="hero-grid__form hero-form" action="#">
+                <div class="hero-form__wrapper">
+                  <label class="visually-hidden" for="coffee-name">Поиск кофе</label>
+                  <input class="hero-form__input" type="text" name="coffee-name" id="coffee-name" placeholder="Ищу кофе...">
+                  <button class="hero-form__button" type="submit" aria-label="Выполнить поиск">
+                    <svg class="hero-form__button-icon" width="52" height="52" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#search-ic"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <p>ntcrn</p>
+        </section>
+      </main>
       <footer class="site-footer">
         <div class="container">
           <dl class="site-footer__list footer-list">
@@ -66,7 +87,6 @@
         </div>
       </footer>
     </div>
-    <script src="/libs/js/focus-visible.min.js" defer></script>
     <script src="js/script.min.js" defer></script>
   </body>
 </html>

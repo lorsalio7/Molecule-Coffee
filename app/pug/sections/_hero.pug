@@ -1,0 +1,21 @@
+section.hero
+  .hero__container.container
+    .hero__grid.hero-grid
+      span.hero-grid__decor
+      span.hero-grid__decor
+      span.hero-grid__decor
+      span.hero-grid__decor
+      span.hero-grid__decor
+      span.hero-grid__decor
+      img(src="img/hero-image-1.jpg", width="425" height="410" alt="").hero-grid__image.hero-grid__image--first
+      span.hero-grid__text.hero-grid__text--first Учись
+      img(src="img/hero-image-2.jpg", width="212" height="206" alt="").hero-grid__image.hero-grid__image--second
+      span.hero-grid__text.hero-grid__text--second Пей кофе
+      img(src="img/hero-image-3.jpg", width="373" height="469" alt="").hero-grid__image.hero-grid__image--third
+      span.hero-grid__text.hero-grid__text--third Отдыхай
+      form(action="#").hero-grid__form.hero-form
+        .hero-form__wrapper
+          label(for="coffee-name" class="visually-hidden") Поиск кофе
+          input(type="text" name="coffee-name" id="coffee-name" placeholder="Ищу кофе...").hero-form__input
+          button(type="submit" aria-label="Выполнить поиск").hero-form__button
+            +svg("hero-form__button-icon", "search-ic", 52, 52, "true")

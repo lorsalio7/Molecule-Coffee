@@ -1,0 +1,40 @@
+.hero-form {
+  display: flex;
+}
+
+.hero-form__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.hero-form__input {
+  align-self: flex-start;
+  border: none;
+  padding: 21px 78px 21px 26px;
+  width: 100%;
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 17%);
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--color-black);
+  background-color: var(--color-wild-sand);
+}
+
+.hero-form__button {
+  position: absolute;
+  right: 13px;
+  top: 10px;
+  border: none;
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.hero-form__button-icon use {
+  fill: var(--color-japonica);
+}
+
+.hero-form__button:active .hero-form__button-icon use {
+  fill: var(--color-brown-rust);
+}
