@@ -1,1 +1,1 @@
-@@include("parts/cart.js");
+@@include("parts/sliders.js");

@@ -1,0 +1,41 @@
+.promo__slider .splide__arrow {
+  width: 45px;
+  height: 53px;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.promo__slider .splide__arrow--prev {
+  left: 38px;
+}
+
+.promo__slider .splide__arrow--next {
+  right: 38px;
+}
+
+.promo__slider .splide__arrow svg {
+  width: 45px;
+  height: 53px;
+  fill: var(--color-mongoose);
+}
+
+.promo__slider .splide__arrow:active svg {
+  fill: var(--color-domino);
+}
+
+.promo__slider .splide__pagination {
+  bottom: 35px;
+}
+
+.promo__slider .splide__pagination__page {
+  margin: 3px 10px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-mongoose);
+  opacity: 1;
+}
+
+.promo__slider .splide__pagination__page.is-active {
+  background-color: var(--color-akaroa);
+  transform: scale(1);
+}

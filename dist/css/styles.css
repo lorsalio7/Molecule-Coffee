@@ -399,6 +399,12 @@ template {
   /* #d37e56 */
   --color-brown-rust: rgb(167, 91, 56);
   /* #a75b38 */
+  --color-mongoose: rgb(176, 156, 122);
+  /* #b09c7a */
+  --color-domino: rgb(143, 124, 90);
+  /* #8f7c5a */
+  --color-akaroa: rgb(220, 205, 180);
+  /* #dccdb4 */
   --header-height: 102px;
   --side-gap: 188px;
   --full-width: calc(100% - (var(--side-gap) * 2));
@@ -879,6 +885,50 @@ body {
 
 .hero-form__button:active .hero-form__button-icon use {
   fill: var(--color-brown-rust);
+}
+
+.promo__slider .splide__arrow {
+  width: 45px;
+  height: 53px;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.promo__slider .splide__arrow--prev {
+  left: 38px;
+}
+
+.promo__slider .splide__arrow--next {
+  right: 38px;
+}
+
+.promo__slider .splide__arrow svg {
+  width: 45px;
+  height: 53px;
+  fill: var(--color-mongoose);
+}
+
+.promo__slider .splide__arrow:active svg {
+  fill: var(--color-domino);
+}
+
+.promo__slider .splide__pagination {
+  bottom: 35px;
+}
+
+.promo__slider .splide__pagination__page {
+  margin: 3px 10px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-mongoose);
+  opacity: 1;
+}
+
+.promo__slider .splide__pagination__page.is-active {
+  background-color: var(--color-akaroa);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 .site-footer {

@@ -8,6 +8,7 @@
     <meta name="description" content="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur">
     <link rel="shortcut icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="libs/css/splide.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="page__body full-height">
@@ -43,8 +44,31 @@
             </div>
           </div>
         </section>
-        <section class="about">
-          <p>ntcrn</p>
+        <section class="promo">
+          <div class="container">
+            <h2 class="visually-hidden">Промо информация</h2>
+            <div class="promo__slider splide">
+              <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev" type="button">
+                  <svg width="45" height="53" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#next-arrow-ic"></use>
+                  </svg>
+                </button>
+                <button class="splide__arrow splide__arrow--next" type="button">
+                  <svg width="45" height="53" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#next-arrow-ic"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide"><img class="promo__image" src="img/promo-image-2.jpg" width="1440" height="897" alt="Седьмой кофе в подарок"></li>
+                  <li class="splide__slide"><img class="promo__image" src="img/promo-image-1.jpg" width="1440" height="897" alt="Molecule делаем кофе с любовью"></li>
+                  <li class="splide__slide"><img class="promo__image" src="img/promo-image-3.jpg" width="1440" height="897" alt="Проснись и учись вместе с кофе Molecule"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
       <footer class="site-footer">
@@ -87,6 +111,8 @@
         </div>
       </footer>
     </div>
+    <script src="libs/js/focus-visible.min.js" defer></script>
+    <script src="libs/js/splide.min.js" defer></script>
     <script src="js/script.min.js" defer></script>
   </body>
 </html>

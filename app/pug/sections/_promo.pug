@@ -1,0 +1,17 @@
+section.promo
+  .container
+    h2.visually-hidden Промо информация
+    .promo__slider.splide
+      .splide__arrows
+        button(type="button").splide__arrow.splide__arrow--prev
+          +svg("", "next-arrow-ic", 45, 53, "true")
+        button(type="button").splide__arrow.splide__arrow--next
+          +svg("", "next-arrow-ic", 45, 53, "true")
+      .splide__track
+        ul.splide__list
+          li.splide__slide
+            img(src="img/promo-image-2.jpg" width="1440" height="897", alt="Седьмой кофе в подарок").promo__image
+          li.splide__slide
+            img(src="img/promo-image-1.jpg" width="1440" height="897", alt="Molecule делаем кофе с любовью").promo__image
+          li.splide__slide
+            img(src="img/promo-image-3.jpg" width="1440" height="897", alt="Проснись и учись вместе с кофе Molecule").promo__image
