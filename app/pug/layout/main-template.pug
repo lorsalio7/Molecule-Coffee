@@ -18,6 +18,10 @@ html(lang="ru" class= htmlClass + additionalClasses)
     link(rel="shortcut icon" type="image/svg+xml" href="img/favicon.svg")
     link(rel="shortcut icon" type="image/png" href="img/favicon.png")
     block styles
+      link(rel="preload", href="fonts/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin)
+      link(rel="preload", href="fonts/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin)
+      link(rel="preload", href="fonts/MontserratBold.woff2" as="font" type="font/woff2" crossorigin)
+      link(rel="preload", href="fonts/PlayfairDisplayRegular.woff2" as="font" type="font/woff2" crossorigin)
       link(rel="stylesheet", href="libs/css/splide.min.css")
       link(rel="stylesheet", href="css/styles.min.css")
   body(class= bodyClass).full-height
