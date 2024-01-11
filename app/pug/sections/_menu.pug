@@ -1,0 +1,66 @@
+section.menu
+  .container
+    h2.visually-hidden Наше меню
+    .coffee-slider.menu__slider.splide(aria-labelledby="coffee-menu-heading")
+      h3#coffee-menu-heading.menu__slider-title Кофе
+      .splide__arrows
+        button(type="button").splide__arrow.splide__arrow--prev
+          +svg("", "next-arrow-ic", 53, 45, "true")
+        button(type="button").splide__arrow.splide__arrow--next
+          +svg("", "next-arrow-ic", 53, 45, "true")
+      .splide__track
+        ul.splide__list
+          each item in pugData.coffee_slides
+            li.menu__card.splide__slide
+              article(style="background-color: var(--color-" + item.color + ")").menu-card
+                .menu-card__text-content
+                  h4.menu-card__title= item.title
+                  .menu-card__params
+                    each param in item.params
+                      .menu-card__params-column
+                        p.menu-card__price= param.price
+                        if param.volume
+                          span.menu-card__volume= param.volume
+                img(src= item.img, width= item.img_width height= item.img_height alt= item.title).menu-card__image
+    .snacks-slider.menu__slider.splide(aria-labelledby="snacks-menu-heading")
+      h3#snacks-menu-heading.menu__slider-title Закуски
+      .splide__arrows
+        button(type="button").splide__arrow.splide__arrow--prev
+          +svg("", "next-arrow-ic", 53, 45, "true")
+        button(type="button").splide__arrow.splide__arrow--next
+          +svg("", "next-arrow-ic", 53, 45, "true")
+      .splide__track
+        ul.splide__list
+          each item in pugData.snacks_slides
+            li.menu__card.splide__slide
+              article(style="background-color: var(--color-" + item.color + ")").menu-card
+                .menu-card__text-content
+                  h4.menu-card__title= item.title
+                  .menu-card__params
+                    each param in item.params
+                      .menu-card__params-column
+                        p.menu-card__price= param.price
+                        if param.volume
+                          span.menu-card__volume= param.volume
+                img(src= item.img, width= item.img_width height= item.img_height alt= item.title).menu-card__image
+    .seasonal-menu-slider.menu__slider.splide(aria-labelledby="seasonal-menu-heading")
+      h3#seasonal-menu-heading.menu__slider-title Сезонное меню
+      .splide__arrows
+        button(type="button").splide__arrow.splide__arrow--prev
+          +svg("", "next-arrow-ic", 53, 45, "true")
+        button(type="button").splide__arrow.splide__arrow--next
+          +svg("", "next-arrow-ic", 53, 45, "true")
+      .splide__track
+        ul.splide__list
+          each item in pugData.seasonal_menu_slides
+            li.menu__card.splide__slide
+              article(style="background-color: var(--color-" + item.color + ")").menu-card
+                .menu-card__text-content
+                  h4.menu-card__title= item.title
+                  .menu-card__params
+                    each param in item.params
+                      .menu-card__params-column
+                        p.menu-card__price= param.price
+                        if param.volume
+                          span.menu-card__volume= param.volume
+                img(src= item.img, width= item.img_width height= item.img_height alt= item.title).menu-card__image

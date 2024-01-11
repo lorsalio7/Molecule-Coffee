@@ -1,0 +1,50 @@
+.menu__slider-title {
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.menu__card {
+  display: flex;
+  flex-direction: column;
+  min-height: 306px;
+}
+
+.menu__slider:not(:last-child) {
+  margin-bottom: 65px;
+}
+
+.menu__slider .splide__track {
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 31px;
+  max-width: 1208px;
+}
+
+.menu__slider .splide__arrow {
+  width: 45px;
+  height: 53px;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.menu__slider .splide__arrow--prev {
+  left: 36px;
+}
+
+.menu__slider .splide__arrow--next {
+  right: 36px;
+}
+
+.menu__slider .splide__arrow svg {
+  width: 45px;
+  height: 53px;
+  fill: var(--color-japonica);
+}
+
+.menu__slider .splide__arrow:active svg {
+  fill: var(--color-brown-rust);
+}

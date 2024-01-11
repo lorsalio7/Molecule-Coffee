@@ -1,3 +1,335 @@
 {
-  "main_content": "Это из файла JSON"
+  "coffee_slides": [
+    {
+      "title": "Капучино",
+      "params": [
+        {
+          "price": 3,
+          "volume": 200
+        },
+        {
+          "price": 3.7,
+          "volume": 300
+        },
+        {
+          "price": 4.3,
+          "volume": 400
+        }
+      ],
+      "img": "img/cappuccino.png",
+      "img_width": 91,
+      "img_height": 143,
+      "color": "aths-special"
+    },
+    {
+      "title": "Латте",
+      "params": [
+        {
+          "price": 3.7,
+          "volume": 300
+        },
+        {
+          "price": 4.3,
+          "volume": 400
+        }
+      ],
+      "img": "img/latte.png",
+      "img_width": 118,
+      "img_height": 154,
+      "color": "cararra"
+    },
+    {
+      "title": "Раф",
+      "params": [
+        {
+          "price": 4.5,
+          "volume": 300
+        },
+        {
+          "price": 5.3,
+          "volume": 400
+        }
+      ],
+      "img": "img/raf.png",
+      "img_width": 91,
+      "img_height": 143,
+      "color": "serenade"
+    },
+    {
+      "title": "Эспрессо",
+      "params": [
+        {
+          "price": 2.2,
+          "volume": 200
+        }
+      ],
+      "img": "img/espresso.png",
+      "img_width": 91,
+      "img_height": 143,
+      "color": "remy"
+    },
+    {
+      "title": "Американо",
+      "params": [
+        {
+          "price": 2.3,
+          "volume": 200
+        },
+        {
+          "price": 3.1,
+          "volume": 300
+        }
+      ],
+      "img": "img/americano.png",
+      "img_width": 89,
+      "img_height": 140,
+      "color": "snow-drift"
+    },
+    {
+      "title": "Капучино",
+      "params": [
+        {
+          "price": 3,
+          "volume": 200
+        },
+        {
+          "price": 3.7,
+          "volume": 300
+        },
+        {
+          "price": 4.3,
+          "volume": 400
+        }
+      ],
+      "img": "img/cappuccino.png",
+      "img_width": 91,
+      "img_height": 143,
+      "color": "aths-special"
+    },
+    {
+      "title": "Эспрессо",
+      "params": [
+        {
+          "price": 2.2,
+          "volume": 200
+        }
+      ],
+      "img": "img/espresso.png",
+      "img_width": 91,
+      "img_height": 143,
+      "color": "remy"
+    }
+  ],
+  "snacks_slides": [
+    {
+      "title": "Батончики crunchy",
+      "params": [
+        {
+          "price": 3
+        }
+      ],
+      "img": "img/crunchy.png",
+      "img_width": 112,
+      "img_height": 144,
+      "color": "aths-special"
+    },
+    {
+      "title": "Сандвич с ветчиной и сыром",
+      "params": [
+        {
+          "price": 4.3,
+          "volume": 180
+        }
+      ],
+      "img": "img/sandwich-with-cheese.png",
+      "img_width": 141,
+      "img_height": 137,
+      "color": "cararra"
+    },
+    {
+      "title": "Сандвич с красной рыбой",
+      "params": [
+        {
+          "price": 5,
+          "volume": 180
+        }
+      ],
+      "img": "img/sandwich-with-red-fish.png",
+      "img_width": 148,
+      "img_height": 132,
+      "color": "serenade"
+    },
+    {
+      "title": "Сандвич с курицей",
+      "params": [
+        {
+          "price": 4.3,
+          "volume": 180
+        }
+      ],
+      "img": "img/chicken-sandwich.png",
+      "img_width": 146,
+      "img_height": 137,
+      "color": "remy"
+    },
+    {
+      "title": "Печенье",
+      "params": [
+        {
+          "price": 3
+        }
+      ],
+      "img": "img/snickers-cookie.png",
+      "img_width": 162,
+      "img_height": 118,
+      "color": "snow-drift"
+    },
+    {
+      "title": "Сандвич с ветчиной и сыром",
+      "params": [
+        {
+          "price": 4.3,
+          "volume": 180
+        }
+      ],
+      "img": "img/sandwich-with-cheese.png",
+      "img_width": 141,
+      "img_height": 137,
+      "color": "cararra"
+    },
+    {
+      "title": "Сандвич с красной рыбой",
+      "params": [
+        {
+          "price": 5,
+          "volume": 180
+        }
+      ],
+      "img": "img/sandwich-with-red-fish.png",
+      "img_width": 148,
+      "img_height": 132,
+      "color": "serenade"
+    }
+  ],
+  "seasonal_menu_slides": [
+    {
+      "title": "Айс латте",
+      "params": [
+        {
+          "price": 3,
+          "volume": 200
+        },
+        {
+          "price": 3.7,
+          "volume": 300
+        }
+      ],
+      "img": "img/ice-latte.png",
+      "img_width": 98,
+      "img_height": 149,
+      "color": "aths-special"
+    },
+    {
+      "title": "Имбирно-тыквенный латте",
+      "params": [
+        {
+          "price": 3.7,
+          "volume": 300
+        },
+        {
+          "price": 4.3,
+          "volume": 400
+        }
+      ],
+      "img": "img/ginger-pumpkin-latte.png",
+      "img_width": 120,
+      "img_height": 153,
+      "color": "cararra"
+    },
+    {
+      "title": "Баунти",
+      "params": [
+        {
+          "price": 5,
+          "volume": 300
+        },
+        {
+          "price": 5.5,
+          "volume": 400
+        }
+      ],
+      "img": "img/bounty.png",
+      "img_width": 91,
+      "img_height": 143,
+      "color": "serenade"
+    },
+    {
+      "title": "Капучино",
+      "params": [
+        {
+          "price": 3.7,
+          "volume": 300
+        },
+        {
+          "price": 4.3,
+          "volume": 400
+        }
+      ],
+      "img": "img/сappuccino-lemonade.png",
+      "img_width": 206,
+      "img_height": 167,
+      "color": "remy"
+    },
+    {
+      "title": "Сникерс",
+      "params": [
+        {
+          "price": 5,
+          "volume": 300
+        },
+        {
+          "price": 5.5,
+          "volume": 400
+        }
+      ],
+      "img": "img/snickers.png",
+      "img_width": 91,
+      "img_height": 143,
+      "color": "snow-drift"
+    },
+    {
+      "title": "Айс латте",
+      "params": [
+        {
+          "price": 3,
+          "volume": 200
+        },
+        {
+          "price": 3.7,
+          "volume": 300
+        }
+      ],
+      "img": "img/ice-latte.png",
+      "img_width": 98,
+      "img_height": 149,
+      "color": "aths-special"
+    },
+    {
+      "title": "Имбирно-тыквенный латте",
+      "params": [
+        {
+          "price": 3.7,
+          "volume": 300
+        },
+        {
+          "price": 4.3,
+          "volume": 400
+        }
+      ],
+      "img": "img/ginger-pumpkin-latte.png",
+      "img_width": 120,
+      "img_height": 153,
+      "color": "cararra"
+    }
+  ]
 }
