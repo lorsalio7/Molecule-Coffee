@@ -8,6 +8,7 @@
     <meta name="description" content="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur">
     <link rel="shortcut icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=КЛЮЧ&amp;lang=ru_RU"></script>
     <link rel="preload" href="fonts/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/MontserratBold.woff2" as="font" type="font/woff2" crossorigin>
@@ -86,7 +87,7 @@
             </div>
           </div>
         </section>
-        <section class="menu">
+        <section class="page__menu menu">
           <div class="container">
             <h2 class="visually-hidden">Наше меню</h2>
             <div class="coffee-slider menu__slider splide" aria-labelledby="coffee-menu-heading">
@@ -438,6 +439,31 @@
                     </article>
                   </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__locations locations">
+          <div class="locations__container container">
+            <h2 class="locations__title">Как нас найти</h2>
+            <div class="locations__tabs locations-tabs">
+              <div class="locations-tabs__header">
+                <div class="locations-tabs__controls"><a class="locations-tabs__control locations-tabs__control--active" href="#locations-tabs-panel-1">БГУИР 4 к.</a><a class="locations-tabs__control" href="#locations-tabs-panel-2">журфак БГУ</a><a class="locations-tabs__control" href="#locations-tabs-panel-3">Юрфак БГУ</a></div>
+              </div>
+              <div class="locations-tabs__panel locations-tabs__panel--active" id="locations-tabs-panel-1">
+                <div class="locations-tabs__map-wrapper">
+                  <div class="locations-tabs__map" id="map-1"></div>
+                </div>
+              </div>
+              <div class="locations-tabs__panel" id="locations-tabs-panel-2">
+                <div class="locations-tabs__map-wrapper">
+                  <div class="locations-tabs__map" id="map-2"></div>
+                </div>
+              </div>
+              <div class="locations-tabs__panel" id="locations-tabs-panel-3">
+                <div class="locations-tabs__map-wrapper">
+                  <div class="locations-tabs__map" id="map-3"></div>
+                </div>
               </div>
             </div>
           </div>

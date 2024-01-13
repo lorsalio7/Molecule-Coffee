@@ -1,0 +1,68 @@
+.locations-tabs__controls {
+  display: flex;
+}
+
+.locations-tabs__control {
+  border-top: 2px solid var(--color-mongoose);
+  border-right: 2px solid var(--color-mongoose);
+  border-left: 2px solid var(--color-mongoose);
+  border-radius: 4px 4px 0 0;
+  padding: 11px 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+  color: var(--color-mongoose);
+  background-color: var(--color-white);
+}
+
+.locations-tabs__control:not(:last-child) {
+  margin-right: 11px;
+}
+
+.locations-tabs__control--active {
+  color: var(--color-white);
+  background-color: var(--color-mongoose);
+}
+
+.locations-tabs__panel {
+  display: none;
+}
+
+.locations-tabs__panel--active {
+  display: block;
+}
+
+.locations-tabs__map-wrapper {
+  overflow: hidden;
+  border-radius: 0 5px 5px;
+  padding: 8px;
+  height: 830px;
+  max-width: 1238px;
+  background-color: var(--color-mongoose);
+}
+
+.locations-tabs__map {
+  width: 100%;
+  height: 100%;
+}
+
+.locations-tabs__zoom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  width: 42px;
+  height: 42px;
+  background-color: var(--color-mongoose);
+  cursor: pointer;
+  user-select: none;
+}
+
+.locations-tabs__zoom-button--zoom-in {
+  margin-bottom: 3px;
+}
+
+.locations-tabs__zoom-button svg {
+  fill: var(--color-white);
+}
