@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
   var coffeeSlider = document.querySelector(".coffee-slider");
   var snacksSlider = document.querySelector(".snacks-slider");
   var seasonalMenuSlider = document.querySelector(".seasonal-menu-slider");
+  var orderSlider = document.querySelector(".order-big-slider");
+  var orderThumbSlider = document.querySelector(".order-thumb-slider");
   if (promoSlider) {
     new Splide(promoSlider, {
       perMove: 1,
@@ -39,6 +41,32 @@ document.addEventListener('DOMContentLoaded', function () {
       pagination: false,
       gap: 32
     }).mount();
+  }
+  if (orderSlider) {
+    var thumbSliderPrevButton = document.querySelector(".order__thumb-slider-button--prev");
+    var thumbSliderNextButton = document.querySelector(".order__thumb-slider-button--next");
+    orderSlider = new Splide(orderSlider, {
+      perMove: 1,
+      arrows: false,
+      pagination: false,
+      gap: 32
+    }).mount();
+    thumbSliderPrevButton.addEventListener("click", function (e) {
+      orderThumbSlider.go("-1");
+    });
+    thumbSliderNextButton.addEventListener("click", function (e) {
+      orderThumbSlider.go("+1");
+    });
+    orderThumbSlider = new Splide(orderThumbSlider, {
+      direction: 'ttb',
+      height: 629,
+      perPage: 3,
+      arrows: false,
+      isNavigation: true,
+      gap: 20,
+      pagination: false
+    }).mount();
+    orderSlider.sync(orderThumbSlider);
   }
 });
 ;

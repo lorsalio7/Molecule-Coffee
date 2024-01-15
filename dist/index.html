@@ -8,7 +8,6 @@
     <meta name="description" content="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur">
     <link rel="shortcut icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=КЛЮЧ&amp;lang=ru_RU"></script>
     <link rel="preload" href="fonts/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/MontserratBold.woff2" as="font" type="font/woff2" crossorigin>
@@ -463,6 +462,79 @@
               <div class="locations-tabs__panel" id="locations-tabs-panel-3">
                 <div class="locations-tabs__map-wrapper">
                   <div class="locations-tabs__map" id="map-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__order order">
+          <div class="order__container container">
+            <div class="order__content">
+              <form class="order__form order-form" action="#" method="POST">
+                <h2 class="order-form__title">Заказать кофе Sorso</h2>
+                <p class="order-form__description">Мы готовим свой кофе на зерне фирмы Sorso высочайшего качества, если вы хотите продолжить кофейную магтю у себя дома оформляйте заказ на доставку</p>
+                <div class="order-form__wrap">
+                  <input class="input" type="text" placeholder="ФИО" name="full-name" id="full-name">
+                  <label class="visually-hidden" for="full-name">Введите имя, фамилию и отчеств</label>
+                </div>
+                <div class="order-form__wrap">
+                  <input class="input" type="email" name="email" id="email" placeholder="Электронная почта">
+                  <label class="visually-hidden" for="email">Введите электронную почту</label>
+                </div>
+                <div class="order-form__wrap">
+                  <p class="order-form__country-code">+375</p>
+                  <input class="input order-form__operator-code" type="text" placeholder="29" name="operator-code" id="operator-code">
+                  <label class="visually-hidden" for="operator-code">Введите код оператора</label>
+                  <input class="input" type="tel" name="phone-number" id="phone-number">
+                  <label class="visually-hidden" for="phone-number">Введите номер телефона</label>
+                </div>
+                <div class="order-form__wrap">
+                  <input class="input" type="text" placeholder="Адрес" name="address" id="address">
+                  <label class="visually-hidden" for="address">Введите адрес</label>
+                </div>
+                <div class="order-form__wrap">
+                  <input class="input" type="text" placeholder="Дата" name="delivery-date" id="delivery-date">
+                  <label class="visually-hidden" for="delivery-date">Введите дату доставки</label>
+                </div>
+                <div class="order-form__wrap order-form__wrap--column">
+                  <input class="input" type="datetime" placeholder="Укажите удобное время доставки (пример 20:00)" name="delivery-time" id="delivery-time">
+                  <label class="visually-hidden" for="delivery-time">Введите время доставки</label>
+                  <p class="order-form__note">(В данной строке необходимо указать удобное для вас время звонка)</p>
+                </div>
+                <button class="button" type="submit">Отправить заявку</button>
+              </form>
+              <div class="order__gallery">
+                <div class="order__big-slider order-big-slider splide">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide"><img class="order-big-slider__image" src="img/order-slide-1.png" width="429" height="429" alt="Sorso кофе 1"></li>
+                      <li class="splide__slide"><img class="order-big-slider__image" src="img/order-slide-2.png" width="429" height="429" alt="Sorso кофе 3"></li>
+                      <li class="splide__slide"><img class="order-big-slider__image" src="img/order-slide-3.png" width="429" height="429" alt="Sorso кофе 2"></li>
+                      <li class="splide__slide"><img class="order-big-slider__image" src="img/order-slide-1.png" width="429" height="429" alt="Sorso кофе 1"></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="order__order-thumb-slider">
+                  <button class="order__thumb-slider-button order__thumb-slider-button--prev" type="button">
+                    <svg width="53" height="45" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#next-arrow-ic"></use>
+                    </svg>
+                  </button>
+                  <button class="order__thumb-slider-button order__thumb-slider-button--next" type="button">
+                    <svg width="53" height="45" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#prev-arrow-ic"></use>
+                    </svg>
+                  </button>
+                  <div class="order-thumb-slider splide">
+                    <div class="splide__track">
+                      <ul class="splide__list">
+                        <li class="splide__slide"><img class="order-thumb-slider__image" src="img/order-slide-1-thumb.png" width="98" height="158" alt="Превью кофе Sorso 1"></li>
+                        <li class="splide__slide"><img class="order-thumb-slider__image" src="img/order-slide-2-thumb.png" width="98" height="158" alt="Превью кофе Sorso 2"></li>
+                        <li class="splide__slide"><img class="order-thumb-slider__image" src="img/order-slide-3-thumb.png" width="98" height="158" alt="Превью кофе Sorso 3"></li>
+                        <li class="splide__slide"><img class="order-thumb-slider__image" src="img/order-slide-1-thumb.png" width="98" height="158" alt="Превью кофе Sorso 1"></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
