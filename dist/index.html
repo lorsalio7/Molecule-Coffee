@@ -8,6 +8,7 @@
     <meta name="description" content="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur">
     <link rel="shortcut icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=КЛЮЧ&amp;lang=ru_RU"></script>
     <link rel="preload" href="fonts/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/MontserratBold.woff2" as="font" type="font/woff2" crossorigin>
@@ -483,9 +484,9 @@
                 </div>
                 <div class="order-form__wrap">
                   <p class="order-form__country-code">+375</p>
-                  <input class="input order-form__operator-code" type="text" placeholder="29" name="operator-code" id="operator-code">
+                  <input class="input order-form__operator-code" type="text" placeholder="29" name="operator-code" id="operator-code" maxlength="2">
                   <label class="visually-hidden" for="operator-code">Введите код оператора</label>
-                  <input class="input" type="tel" name="phone-number" id="phone-number">
+                  <input class="input order-form__phone" type="tel" name="phone-number" id="phone-number" maxlength="7">
                   <label class="visually-hidden" for="phone-number">Введите номер телефона</label>
                 </div>
                 <div class="order-form__wrap">
@@ -493,11 +494,11 @@
                   <label class="visually-hidden" for="address">Введите адрес</label>
                 </div>
                 <div class="order-form__wrap">
-                  <input class="input" type="text" placeholder="Дата" name="delivery-date" id="delivery-date">
+                  <input class="input order-form__date" type="text" placeholder="Дата" name="delivery-date" id="delivery-date">
                   <label class="visually-hidden" for="delivery-date">Введите дату доставки</label>
                 </div>
                 <div class="order-form__wrap order-form__wrap--column">
-                  <input class="input" type="datetime" placeholder="Укажите удобное время доставки (пример 20:00)" name="delivery-time" id="delivery-time">
+                  <input class="input order-form__time" type="datetime" placeholder="Укажите удобное время доставки (пример 20:00)" name="delivery-time" id="delivery-time">
                   <label class="visually-hidden" for="delivery-time">Введите время доставки</label>
                   <p class="order-form__note">(В данной строке необходимо указать удобное для вас время звонка)</p>
                 </div>
@@ -582,6 +583,7 @@
       </footer>
     </div>
     <script src="libs/js/focus-visible.min.js" defer></script>
+    <script src="libs/js/cleave.min.js" defer></script>
     <script src="libs/js/splide.min.js" defer></script>
     <script src="js/script.min.js" defer></script>
   </body>

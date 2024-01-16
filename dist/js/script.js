@@ -257,3 +257,32 @@ ymaps.ready(function () {
   thirdMap.controls.add(zoomControl);
 });
 ;
+var phoneInput = document.querySelector(".order-form__phone");
+var phoneCode = document.querySelector(".order-form__operator-code");
+var dateOrder = document.querySelector(".order-form__date");
+var timeOrder = document.querySelector(".order-form__time");
+if (phoneCode) {
+  phoneCode = new Cleave(phoneCode, {
+    numeral: true,
+    delimiter: ''
+  });
+}
+if (phoneInput) {
+  phoneInput = new Cleave(phoneInput, {
+    numeral: true,
+    delimiter: ''
+  });
+}
+if (dateOrder) {
+  dateOrder = new Cleave(dateOrder, {
+    date: true,
+    datePattern: ['d', 'm', 'Y']
+  });
+}
+if (timeOrder) {
+  timeOrder = new Cleave(timeOrder, {
+    time: true,
+    timePattern: ['h', 'm']
+  });
+}
+;
