@@ -434,13 +434,15 @@ template {
 
 /* @include hover-focus {} */
 
-/* @mixin px940 {
-  @media (max-width: 940px) {
-    @content;
-  }
-} */
+/* @include px1250 {} */
 
-/* @include px940 {} */
+/* @include px1090 {} */
+
+/* @include px930 {} */
+
+/* @include px780 {} */
+
+/* @include px425 {} */
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
@@ -1097,8 +1099,9 @@ body {
 }
 
 .menu__slider .splide__track {
-  margin-right: auto;
-  margin-left: auto;
+  --side-slider-gap: 116px;
+  margin-right: var(--side-slider-gap);
+  margin-left: var(--side-slider-gap);
   padding-bottom: 31px;
   max-width: 1208px;
 }
@@ -1169,6 +1172,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -1189,11 +1194,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 2px 12px;
   min-height: 60px;
-}
-
-.menu-card__params-column:not(:last-child) {
-  margin-right: 27px;
 }
 
 .menu-card__price {
@@ -1677,4 +1679,173 @@ body {
 
 .socials__link--tiktok {
   background-image: url("../img/tiktok-ic.svg");
+}
+
+@media (max-width: 1250px) {
+  .menu__card {
+    min-height: 250px;
+  }
+
+  .menu__slider .splide__track {
+    --side-slider-gap: 80px;
+  }
+
+  .menu__slider .splide__arrow--prev {
+    left: 8px;
+  }
+
+  .menu__slider .splide__arrow--next {
+    right: 8px;
+  }
+
+  .menu-card {
+    min-height: 250px;
+  }
+
+  .menu-card__text-content {
+    min-height: 120px;
+  }
+
+  .menu-card__title {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+
+  .menu-card__params-column {
+    margin: 2px 6px;
+  }
+
+  .menu-card__price {
+    margin-top: 0;
+    font-size: 24px;
+  }
+
+  .menu-card__volume {
+    margin-bottom: 6px;
+    font-size: 13px;
+  }
+
+  .menu-card__image {
+    height: 110px;
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .menu__slider .splide__track {
+    --side-slider-gap: 60px;
+  }
+
+  .menu__slider .splide__arrow {
+    width: 35px;
+    height: 41px;
+  }
+
+  .menu__slider .splide__arrow--prev {
+    left: 4px;
+  }
+
+  .menu__slider .splide__arrow--next {
+    right: 4px;
+  }
+
+  .menu__slider .splide__arrow svg {
+    width: 35px;
+    height: 41px;
+  }
+
+  .menu-card__price {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 930px) {
+  .menu__slider .splide__track {
+    --side-slider-gap: 57px;
+  }
+
+  .menu__slider .splide__arrow {
+    width: 24px;
+    height: 28px;
+  }
+
+  .menu__slider .splide__arrow--prev {
+    left: 9px;
+  }
+
+  .menu__slider .splide__arrow--next {
+    right: 9px;
+  }
+
+  .menu__slider .splide__arrow svg {
+    width: 24px;
+    height: 28px;
+  }
+
+  .menu-card {
+    min-height: 215px;
+  }
+
+  .menu-card__text-content {
+    min-height: 100px;
+  }
+
+  .menu-card__title {
+    font-size: 13px;
+  }
+
+  .menu-card__params-column {
+    margin: 2px 3px;
+  }
+
+  .menu-card__price {
+    font-size: 20px;
+  }
+
+  .menu-card__volume {
+    font-size: 11px;
+  }
+
+  .menu-card__image {
+    height: 90px;
+    max-width: 88px;
+  }
+}
+
+@media (max-width: 780px) {
+  .menu__slider-title {
+    font-size: 24px;
+  }
+
+  .menu__slider .splide__track {
+    --side-slider-gap: 42px;
+  }
+
+  .menu__slider .splide__arrow--prev {
+    left: 0;
+  }
+
+  .menu__slider .splide__arrow--next {
+    right: 0;
+  }
+
+  .menu-card {
+    padding: 11px 4px;
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 425px) {
+  .menu__slider-title {
+    font-size: 24px;
+    line-height: 1.1;
+  }
+
+  .menu__slider:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .menu-card__title {
+    font-size: 16px;
+  }
 }

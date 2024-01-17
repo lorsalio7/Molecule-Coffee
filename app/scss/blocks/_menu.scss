@@ -5,23 +5,58 @@
   font-size: 36px;
   line-height: 30px;
   text-align: center;
+
+  @include px780 {
+    font-size: 24px;
+  }
+
+  @include px425 {
+    font-size: 24px;
+    line-height: 1.1;
+  }
 }
 
 .menu__card {
   display: flex;
   flex-direction: column;
   min-height: 306px;
+
+  @include px1250 {
+    min-height: 250px;
+  }
 }
 
 .menu__slider:not(:last-child) {
   margin-bottom: 65px;
+
+  @include px425 {
+    margin-bottom: 40px;
+  }
 }
 
 .menu__slider .splide__track {
-  margin-right: auto;
-  margin-left: auto;
+  --side-slider-gap: 116px;
+
+  margin-right: var(--side-slider-gap);
+  margin-left: var(--side-slider-gap);
   padding-bottom: 31px;
   max-width: 1208px;
+
+  @include px1250 {
+    --side-slider-gap: 80px;
+  }
+
+  @include px1090 {
+    --side-slider-gap: 60px;
+  }
+
+  @include px930 {
+    --side-slider-gap: 57px;
+  }
+
+  @include px780 {
+    --side-slider-gap: 42px;
+  }
 }
 
 .menu__slider .splide__arrow {
@@ -29,20 +64,72 @@
   height: 53px;
   background-color: transparent;
   opacity: 1;
+
+  @include px1090 {
+    width: 35px;
+    height: 41px;
+  }
+
+  @include px930 {
+    width: 24px;
+    height: 28px;
+  }
 }
 
 .menu__slider .splide__arrow--prev {
   left: 36px;
+
+  @include px1250 {
+    left: 8px;
+  }
+
+  @include px1090 {
+    left: 4px;
+  }
+
+  @include px930 {
+    left: 9px;
+  }
+
+  @include px780 {
+    left: 0;
+  }
 }
 
 .menu__slider .splide__arrow--next {
   right: 36px;
+
+  @include px1250 {
+    right: 8px;
+  }
+
+  @include px1090 {
+    right: 4px;
+  }
+
+  @include px930 {
+    right: 9px;
+  }
+
+  @include px780 {
+    right: 0;
+  }
 }
 
 .menu__slider .splide__arrow svg {
   width: 45px;
   height: 53px;
   fill: var(--color-japonica);
+
+  @include px1090 {
+    width: 35px;
+    height: 41px;
+  }
+
+  @include px930 {
+    width: 24px;
+    height: 28px;
+  }
 }
 
 .menu__slider .splide__arrow:active svg {

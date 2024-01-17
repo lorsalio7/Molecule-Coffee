@@ -43,10 +43,42 @@
 
 /* @include hover-focus {} */
 
-/* @mixin px940 {
-  @media (max-width: 940px) {
+@mixin px1250 {
+  @media (max-width: 1250px) {
     @content;
   }
-} */
+}
 
-/* @include px940 {} */
+/* @include px1250 {} */
+
+@mixin px1090 {
+  @media (max-width: 1090px) {
+    @content;
+  }
+}
+
+/* @include px1090 {} */
+
+@mixin px930 {
+  @media (max-width: 930px) {
+    @content;
+  }
+}
+
+/* @include px930 {} */
+
+@mixin px780 {
+  @media (max-width: 780px) {
+    @content;
+  }
+}
+
+/* @include px780 {} */
+
+@mixin px425 {
+  @media (max-width: 425px) {
+    @content;
+  }
+}
+
+/* @include px425 {} */

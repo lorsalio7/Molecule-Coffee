@@ -21,7 +21,24 @@ document.addEventListener('DOMContentLoaded', function() {
       perMove: 1,
       arrows: true,
       pagination: false,
-      gap: 32
+      gap: 32,
+      breakpoints: {
+        1250: {
+          gap: 20
+        },
+        1090: {
+          gap: 15
+        },
+        730: {
+          perPage: 3
+        },
+        520: {
+          perPage: 2
+        },
+        375: {
+          perPage: 1
+        }
+      }
     }).mount();
   }
 
@@ -31,7 +48,24 @@ document.addEventListener('DOMContentLoaded', function() {
       perMove: 1,
       arrows: true,
       pagination: false,
-      gap: 32
+      gap: 32,
+      breakpoints: {
+        1250: {
+          gap: 20
+        },
+        1090: {
+          gap: 15
+        },
+        730: {
+          perPage: 3
+        },
+        520: {
+          perPage: 2
+        },
+        375: {
+          perPage: 1
+        }
+      }
     }).mount();
   }
 
@@ -41,7 +75,24 @@ document.addEventListener('DOMContentLoaded', function() {
       perMove: 1,
       arrows: true,
       pagination: false,
-      gap: 32
+      gap: 32,
+      breakpoints: {
+        1250: {
+          gap: 20
+        },
+        1090: {
+          gap: 15
+        },
+        730: {
+          perPage: 3
+        },
+        520: {
+          perPage: 2
+        },
+        375: {
+          perPage: 1
+        }
+      }
     }).mount();
   }
 
