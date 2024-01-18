@@ -21,7 +21,7 @@
   flex-direction: column;
   min-height: 306px;
 
-  @include px1250 {
+  @include px1360 {
     min-height: 250px;
   }
 }
@@ -42,7 +42,7 @@
   padding-bottom: 31px;
   max-width: 1208px;
 
-  @include px1250 {
+  @include px1360 {
     --side-slider-gap: 80px;
   }
 
@@ -79,7 +79,7 @@
 .menu__slider .splide__arrow--prev {
   left: 36px;
 
-  @include px1250 {
+  @include px1360 {
     left: 8px;
   }
 
@@ -99,7 +99,7 @@
 .menu__slider .splide__arrow--next {
   right: 36px;
 
-  @include px1250 {
+  @include px1360 {
     right: 8px;
   }
 

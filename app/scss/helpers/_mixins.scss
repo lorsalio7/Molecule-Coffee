@@ -43,13 +43,13 @@
 
 /* @include hover-focus {} */
 
-@mixin px1250 {
-  @media (max-width: 1250px) {
+@mixin px1360 {
+  @media (max-width: 1360px) {
     @content;
   }
 }
 
-/* @include px1250 {} */
+/* @include px1360 {} */
 
 @mixin px1090 {
   @media (max-width: 1090px) {
@@ -74,6 +74,14 @@
 }
 
 /* @include px780 {} */
+
+@mixin px700 {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
+/* @include px700 {} */
 
 @mixin px425 {
   @media (max-width: 425px) {

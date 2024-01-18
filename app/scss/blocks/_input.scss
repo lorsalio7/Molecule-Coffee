@@ -5,4 +5,12 @@
   width: 100%;
   font-size: 18px;
   line-height: 27px;
+
+  @include px1360 {
+    font-size: 16px;
+  }
+
+  @include px1090 {
+    padding: 2px 8px;
+  }
 }

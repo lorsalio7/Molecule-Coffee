@@ -3,8 +3,23 @@
   margin-bottom: 75px;
   font-weight: 600;
   font-size: 48px;
-  line-height: 30px;
+  line-height: 1.1;
   color: var(--color-black);
+
+  @include px1360 {
+    margin-bottom: 50px;
+    font-size: 40px;
+  }
+
+  @include px1090 {
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+
+  @include px780 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
 }
 
 .order-form__description {
@@ -13,12 +28,30 @@
   font-size: 18px;
   line-height: 30px;
   color: var(--color-black);
+
+  @include px1360 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @include px780 {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
 }
 
 .order-form__wrap {
   display: flex;
   align-items: center;
   margin-bottom: 33px;
+
+  @include px1360 {
+    margin-bottom: 25px;
+  }
+
+  @include px1090 {
+    margin-bottom: 15px;
+  }
 }
 
 .order-form__wrap--column {
@@ -32,12 +65,20 @@
   font-size: 18px;
   line-height: 27px;
   color: var(--color-black);
+
+  @include px1360 {
+    font-size: 16px;
+  }
 }
 
 .order-form__operator-code {
   margin-right: 11px;
   max-width: 57px;
   text-align: center;
+
+  @include px1090 {
+    max-width: 44px;
+  }
 }
 
 .order-form__note {

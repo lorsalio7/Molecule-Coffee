@@ -115,7 +115,23 @@ document.addEventListener('DOMContentLoaded', function () {
       arrows: false,
       isNavigation: true,
       gap: 20,
-      pagination: false
+      pagination: false,
+      breakpoints: {
+        1360: {
+          height: 529
+        },
+        1090: {
+          height: 390
+        },
+        780: {
+          height: 336
+        },
+        700: {
+          height: 116,
+          direction: 'ttr',
+          pagination: true
+        }
+      }
     }).mount();
     orderSlider.sync(orderThumbSlider);
   }
@@ -335,5 +351,23 @@ if (timeOrder) {
     time: true,
     timePattern: ['h', 'm']
   });
+}
+;
+var orderTimeInput = document.querySelector(".order-form__time");
+var widthForInput = window.matchMedia("(max-width: 1090px)");
+if (orderTimeInput) {
+  var changePlaceholder = function changePlaceholder(matches) {
+    if (matches) {
+      console.log("small");
+      orderTimeInput.setAttribute("placeholder", "Укажите удобное время доставки");
+    } else {
+      console.log("big");
+      orderTimeInput.setAttribute("placeholder", "Укажите удобное время доставки (пример 20:00)");
+    }
+  };
+  widthForInput.onchange = function (e) {
+    changePlaceholder(e.matches);
+  };
+  changePlaceholder(widthForInput.matches);
 }
 ;

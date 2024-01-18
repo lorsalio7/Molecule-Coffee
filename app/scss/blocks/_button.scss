@@ -9,6 +9,16 @@
   background-color: var(--color-eclipse);
   cursor: pointer;
   user-select: none;
+
+  @include px930 {
+    padding: 8px 20px;
+    font-size: 20px;
+  }
+
+  @include px780 {
+    padding: 6px 14px;
+    font-size: 15px;
+  }
 }
 
 .button:active {

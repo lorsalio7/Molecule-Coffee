@@ -123,6 +123,22 @@ document.addEventListener('DOMContentLoaded', function() {
       isNavigation: true,
       gap: 20,
       pagination: false,
+      breakpoints: {
+        1360: {
+          height: 529
+        },
+        1090: {
+          height: 390
+        },
+        780: {
+          height: 336
+        },
+        700: {
+          height: 116,
+          direction: 'ttr',
+          pagination: true
+        }
+      }
     }).mount();
 
     orderSlider.sync(orderThumbSlider);
