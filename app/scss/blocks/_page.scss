@@ -4,6 +4,10 @@
 
 .page__locations {
   margin-bottom: 120px;
+
+  @include px425 {
+    margin-bottom: 90px;
+  }
 }
 
 .page__order {

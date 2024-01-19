@@ -14,10 +14,34 @@
   text-decoration: none;
   color: var(--color-mongoose);
   background-color: var(--color-white);
+
+  @include px1090 {
+    padding: 7px 20px;
+    font-size: 20px;
+  }
+
+  @include px780 {
+    padding: 6px 15px;
+    font-size: 15px;
+  }
+
+  @include px700 {
+    padding: 3px 10px;
+    font-size: 14px;
+  }
+
+  @include px425 {
+    padding: 3px;
+    line-height: 1.3;
+  }
 }
 
 .locations-tabs__control:not(:last-child) {
   margin-right: 11px;
+
+  @include px780 {
+    margin-right: 6px;
+  }
 }
 
 .locations-tabs__control--active {
@@ -40,6 +64,31 @@
   height: 830px;
   max-width: 1238px;
   background-color: var(--color-mongoose);
+
+  @include px1360 {
+    height: 730px;
+  }
+
+  @include px1090 {
+    height: 630px;
+  }
+
+  @include px930 {
+    height: 530px;
+  }
+
+  @include px780 {
+    height: 450px;
+  }
+
+  @include px700 {
+    height: 400px;
+  }
+
+  @include px425 {
+    padding: 3px;
+    height: 228px;
+  }
 }
 
 .locations-tabs__map {
@@ -57,6 +106,11 @@
   background-color: var(--color-mongoose);
   cursor: pointer;
   user-select: none;
+
+  @include px780 {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .locations-tabs__zoom-button--zoom-in {
@@ -65,4 +119,9 @@
 
 .locations-tabs__zoom-button svg {
   fill: var(--color-white);
+
+  @include px780 {
+    width: 22px;
+    height: 22px;
+  }
 }

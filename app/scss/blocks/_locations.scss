@@ -1,5 +1,25 @@
 .locations__container {
+  max-width: 1470px;
+}
+
+.locations__content {
+  --locations-side-gap: 116px;
+
+  margin-right: var(--locations-side-gap);
+  margin-left: var(--locations-side-gap);
   max-width: 1238px;
+
+  @include px1360 {
+    --locations-side-gap: 60px;
+  }
+
+  @include px1090 {
+    --locations-side-gap: 35px;
+  }
+
+  @include px700 {
+    --locations-side-gap: 10px;
+  }
 }
 
 .locations__title {
@@ -9,4 +29,19 @@
   font-size: 48px;
   line-height: 30px;
   color: var(--color-black);
+
+  @include px1360 {
+    margin-bottom: 50px;
+    font-size: 40px;
+  }
+
+  @include px1090 {
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+
+  @include px780 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
 }
