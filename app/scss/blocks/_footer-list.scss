@@ -1,13 +1,31 @@
 .footer-list {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   margin: 0;
+
+  @include px700 {
+    flex-direction: column;
+  }
+}
+
+.footer-list__item:nth-child(2) {
+  @include px780 {
+    flex-shrink: 1;
+  }
 }
 
 .footer-list__item:not(:last-child) {
   margin-right: 30px;
+
+  @include px930 {
+    margin-right: 20px;
+  }
+
+  @include px700 {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .footer-list__title {
@@ -16,6 +34,20 @@
   font-size: 22px;
   line-height: 27px;
   color: var(--color-white);
+
+  @include px1360 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @include px930 {
+    font-size: 16px;
+  }
+
+  @include px780 {
+    font-size: 13px;
+    line-height: 16px;
+  }
 }
 
 .footer-list__content {

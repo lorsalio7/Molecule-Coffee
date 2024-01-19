@@ -4,6 +4,14 @@
 
 .address-list__item:not(:last-child) {
   margin-bottom: 48px;
+
+  @include px1090 {
+    margin-bottom: 30px;
+  }
+
+  @include px780 {
+    margin-bottom: 20px;
+  }
 }
 
 .address-list__text {
@@ -15,6 +23,23 @@
   color: var(--color-white);
   background-image: url("../img/place-ic.svg");
   background-position: top 0 left 0;
-  background-size: auto;
+  background-size: 24px 27px;
   background-repeat: no-repeat;
+
+  @include px1360 {
+    font-size: 18px;
+    line-height: 24px;
+    background-size: 20px 22px;
+  }
+
+  @include px930 {
+    font-size: 16px;
+  }
+
+  @include px780 {
+    padding-left: 24px;
+    font-size: 13px;
+    background-position: top 4px left 0;
+    background-size: 15px 18px;
+  }
 }

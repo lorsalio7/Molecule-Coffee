@@ -1,6 +1,7 @@
 .partners-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .partners-list__logo {
@@ -8,4 +9,15 @@
   margin-right: 16px;
   margin-bottom: 11px;
   object-fit: contain;
+
+  @include px930 {
+    margin-right: 9px;
+    margin-bottom: 5px;
+    width: auto;
+    max-height: 40px;
+  }
+
+  @include px780 {
+    max-height: 30px;
+  }
 }

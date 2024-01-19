@@ -3,7 +3,27 @@
 }
 
 .site-footer__list {
-  padding: 88px 50px;
+  --site-footer-side-padding: 50px;
+
+  padding: 88px var(--site-footer-side-padding);
+
+  @include px1360 {
+    --site-footer-side-padding: 40px;
+  }
+
+  @include px1090 {
+    --site-footer-side-padding: 30px;
+  }
+
+  @include px780 {
+    padding: 68px var(--site-footer-side-padding);
+  }
+
+  @include px700 {
+    --site-footer-side-padding: 10px;
+
+    padding: 40px var(--site-footer-side-padding);
+  }
 }
 
 .site-footer__partners-list {
