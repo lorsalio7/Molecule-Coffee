@@ -1,16 +1,49 @@
+.promo__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .promo__slider .splide__arrow {
   width: 45px;
   height: 53px;
   background-color: transparent;
   opacity: 1;
+
+  @include px780 {
+    width: 28px;
+    height: 24px;
+  }
+
+  @include px425 {
+    width: 14px;
+    height: 12px;
+  }
 }
 
 .promo__slider .splide__arrow--prev {
   left: 38px;
+
+  @include px780 {
+    left: 20px;
+  }
+
+  @include px425 {
+    left: 10px;
+  }
 }
 
 .promo__slider .splide__arrow--next {
   right: 38px;
+
+  @include px780 {
+    right: 20px;
+  }
+
+  @include px425 {
+    right: 10px;
+  }
 }
 
 .promo__slider .splide__arrow svg {
@@ -25,6 +58,14 @@
 
 .promo__slider .splide__pagination {
   bottom: 35px;
+
+  @include px930 {
+    bottom: 18px;
+  }
+
+  @include px425 {
+    bottom: 9px;
+  }
 }
 
 .promo__slider .splide__pagination__page {
@@ -33,6 +74,18 @@
   height: 15px;
   background-color: var(--color-mongoose);
   opacity: 1;
+
+  @include px930 {
+    margin: 3px;
+    width: 8px;
+    height: 8px;
+  }
+
+  @include px425 {
+    margin: 3px 5px;
+    width: 4px;
+    height: 4px;
+  }
 }
 
 .promo__slider .splide__pagination__page.is-active {
