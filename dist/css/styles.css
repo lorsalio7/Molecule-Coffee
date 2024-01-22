@@ -422,7 +422,6 @@ template {
   /* #feebf0 */
   --color-snow-drift: rgb(238, 243, 239);
   /* #eef3ef */
-  --header-height: 102px;
   --side-gap: 188px;
   --full-width: calc(100% - (var(--side-gap) * 2));
   --column-width: calc(var(--full-width) / 5);
@@ -566,8 +565,17 @@ body {
 }
 
 .site-header {
+  --header-height: 102px;
   position: relative;
   z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   border-bottom: 1px solid var(--color-border);
   min-height: var(--header-height);
 }
@@ -579,6 +587,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  width: 100%;
   height: 100%;
 }
 
@@ -594,6 +603,18 @@ body {
   background-color: #fff;
 }
 
+.site-header__site-navigation {
+  margin-right: 164px;
+}
+
+.logo__image {
+  display: block;
+  width: 247px;
+  height: 82px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .site-navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -602,13 +623,18 @@ body {
       flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: -6px;
   padding: 0;
+  padding-bottom: 8px;
   max-width: 750px;
 }
 
 .site-navigation__item:not(:last-child) {
   margin-right: 76px;
+}
+
+.site-navigation__item {
+  margin-bottom: 6px;
 }
 
 .site-navigation__link {
@@ -1730,6 +1756,23 @@ body {
 }
 
 @media (max-width: 1360px) {
+  .site-header__site-navigation {
+    margin-right: 130px;
+  }
+
+  .logo__image {
+    width: 220px;
+    height: 73px;
+  }
+
+  .site-navigation__item:not(:last-child) {
+    margin-right: 60px;
+  }
+
+  .site-navigation__link {
+    font-size: 22px;
+  }
+
   .new__container::before {
     left: 0;
   }
@@ -1899,6 +1942,29 @@ body {
 }
 
 @media (max-width: 1090px) {
+  .site-header__logo {
+    margin-top: auto;
+    margin-right: 45px;
+    height: auto;
+  }
+
+  .site-header__site-navigation {
+    margin-right: 100px;
+  }
+
+  .logo__image {
+    width: 180px;
+    height: 60px;
+  }
+
+  .site-navigation__item:not(:last-child) {
+    margin-right: 45px;
+  }
+
+  .site-navigation__link {
+    font-size: 20px;
+  }
+
   .new__container::before {
     width: 27px;
     height: 169px;
@@ -2048,6 +2114,27 @@ body {
 }
 
 @media (max-width: 930px) {
+  .site-header {
+    --header-height: 85px;
+  }
+
+  .site-header__logo {
+    margin-right: 38px;
+  }
+
+  .logo__image {
+    width: 165px;
+    height: 55px;
+  }
+
+  .site-navigation__item:not(:last-child) {
+    margin-right: 38px;
+  }
+
+  .site-navigation__link {
+    font-size: 18px;
+  }
+
   .promo__slider .splide__pagination {
     bottom: 18px;
   }
@@ -2186,6 +2273,23 @@ body {
 }
 
 @media (max-width: 780px) {
+  .site-header {
+    --header-height: 69px;
+  }
+
+  .site-header__site-navigation {
+    margin-right: 90px;
+  }
+
+  .logo__image {
+    width: 150px;
+    height: 50px;
+  }
+
+  .site-navigation__link {
+    font-size: 16px;
+  }
+
   .promo__slider .splide__arrow {
     width: 28px;
     height: 24px;
@@ -2348,6 +2452,25 @@ body {
 }
 
 @media (max-width: 700px) {
+  .site-header__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .site-header__logo {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .site-header__site-navigation {
+    margin-right: 0;
+  }
+
   .new__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -2467,6 +2590,19 @@ body {
 @media (max-width: 425px) {
   .page__locations {
     margin-bottom: 90px;
+  }
+
+  .site-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .site-navigation__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .site-navigation__link {
+    font-size: 14px;
   }
 
   .promo__slider .splide__arrow {

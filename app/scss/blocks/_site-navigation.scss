@@ -3,13 +3,34 @@
   flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: -6px;
   padding: 0;
+  padding-bottom: 8px;
   max-width: 750px;
 }
 
 .site-navigation__item:not(:last-child) {
   margin-right: 76px;
+
+  @include px1360 {
+    margin-right: 60px;
+  }
+
+  @include px1090 {
+    margin-right: 45px;
+  }
+
+  @include px930 {
+    margin-right: 38px;
+  }
+
+  @include px425 {
+    margin-right: 20px;
+  }
+}
+
+.site-navigation__item {
+  margin-bottom: 6px;
 }
 
 .site-navigation__link {
@@ -18,4 +39,24 @@
   font-size: 24px;
   text-decoration: none;
   color: var(--color-black);
+
+  @include px1360 {
+    font-size: 22px;
+  }
+
+  @include px1090 {
+    font-size: 20px;
+  }
+
+  @include px930 {
+    font-size: 18px;
+  }
+
+  @include px780 {
+    font-size: 16px;
+  }
+
+  @include px425 {
+    font-size: 14px;
+  }
 }

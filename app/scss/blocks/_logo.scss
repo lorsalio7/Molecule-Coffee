@@ -1,0 +1,26 @@
+.logo__image {
+  display: block;
+  width: 247px;
+  height: 82px;
+  object-fit: contain;
+
+  @include px1360 {
+    width: 220px;
+    height: 73px;
+  }
+
+  @include px1090 {
+    width: 180px;
+    height: 60px;
+  }
+
+  @include px930 {
+    width: 165px;
+    height: 55px;
+  }
+
+  @include px780 {
+    width: 150px;
+    height: 50px;
+  }
+}
