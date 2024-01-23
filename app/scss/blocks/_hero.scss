@@ -19,6 +19,15 @@
     background-position: top var(--header-height) left 0;
     background-size: 164px 281px;
     background-repeat: no-repeat;
+
+    @include px1360 {
+      right: 0;
+      width: calc(var(--side-gap) + 15px);
+    }
+
+    @include px700 {
+      height: calc(166px + var(--header-height));
+    }
   }
 }
 
@@ -29,4 +38,19 @@
   width: calc(var(--column-width) * 5);
   min-height: 100vh;
   transform: translateX(-50%);
+
+  &::before {
+    @include px425 {
+      content: "";
+      grid-column: 1 / 1;
+      grid-row: 1 / 1;
+      margin-top: var(--header-height);
+      width: 100%;
+      height: 54px;
+      background-image: url("../img/cupcake.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
 }

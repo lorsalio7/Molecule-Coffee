@@ -2,6 +2,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: calc(var(--header-height) + 77px) auto auto auto auto 1fr;
+
+  @include px700 {
+    grid-template-rows: calc(var(--header-height) + 67px) auto auto auto auto auto auto 1fr;
+  }
+
+  @include px425 {
+    grid-template-rows: calc(var(--header-height) + 54px) auto auto auto auto auto auto 1fr;
+  }
 }
 
 .hero-grid__decor {
@@ -12,6 +20,10 @@
   grid-row: 1 / 7;
   border-left: 1px solid var(--color-border);
   height: 100%;
+
+  @include px700 {
+    grid-row: 1 / 9;
+  }
 }
 
 .hero-grid__decor:nth-child(1) {
@@ -20,7 +32,8 @@
     url("../img/holiday-cupcakes.jpg");
   background-position:
     top 64% left 0,
-    top calc(64% + 79px + 140px) left 50%;
+    top calc(64% + 79px + 140px) center;
+  background-size: contain;
   background-repeat: no-repeat;
 
   &::before {
@@ -38,6 +51,34 @@
       bottom right;
     background-size: contain, 141px 132px;
     background-repeat: no-repeat;
+
+    @include px1360 {
+      left: -156px;
+      width: calc(var(--side-gap) + 15px);
+      background-image:
+        url("data:image/svg+xml,%3Csvg width='70' height='100%' viewBox='0 0 70 100%' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='70' height='100%' fill='%23FFF0E2'/%3E%3C/svg%3E"),
+        url("../img/cupcake.png");
+      background-size: 33.2% 100%, 66.8% auto;
+    }
+
+    @include px1090 {
+      left: -126px;
+    }
+
+    @include px780 {
+      left: -90px;
+    }
+
+    @include px700 {
+      left: -76px;
+    }
+
+    @include px425 {
+      left: -41px;
+      height: 166px;
+      background-image: url("data:image/svg+xml,%3Csvg width='70' height='100%' viewBox='0 0 70 100%' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='70' height='100%' fill='%23FFF0E2'/%3E%3C/svg%3E");
+      background-size: 100% 100%;
+    }
   }
 
   &::after {
@@ -49,6 +90,35 @@
     height: 50px;
     background-image: url("data:image/svg+xml,%3Csvg width='211' height='50' viewBox='0 0 211 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='211' height='50' fill='%23EEF3EF'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
+
+    @include px780 {
+      top: 62%;
+      height: 30px;
+    }
+
+    @include px700 {
+      top: 66%;
+    }
+
+    @include px425 {
+      top: 62%;
+    }
+  }
+
+  @include px930 {
+    background-position:
+      top 64% left 0,
+      top calc(55% + 79px + 140px) center;
+  }
+
+  @include px780 {
+    background-image: url("data:image/svg+xml,%3Csvg width='213' height='123' viewBox='0 0 213 123' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='213' height='123' fill='%23E3E2DF'/%3E%3C/svg%3E");
+    background-position: top 74% left 0;
+    background-size: contain;
+  }
+
+  @include px425 {
+    background-position: top 70% left 0;
   }
 }
 
@@ -66,6 +136,10 @@
   background-position: bottom 131px left 0;
   background-size: 25px 63px;
   background-repeat: no-repeat;
+
+  @include px780 {
+    background-image: none;
+  }
 }
 
 .hero-grid__decor:nth-child(5) {
@@ -77,19 +151,6 @@
   background-size: 44px var(--header-height);
   background-repeat: no-repeat;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 66px;
-    bottom: 125px;
-    width: 288px;
-    height: 80px;
-    background-image: url("../img/cookie.png");
-    background-position: 0 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
   &::after {
     content: "";
     position: absolute;
@@ -98,8 +159,34 @@
     width: 161px;
     height: var(--header-height);
     background-image: url("../img/doughnut.jpg");
+    background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @include px1360 {
+      width: calc(var(--side-gap) + 15px);
+    }
+
+    @include px1090 {
+      right: calc((var(--side-gap) + 17px) * -1);
+    }
+  }
+
+  @include px930 {
+    background-position: right -4px top 0;
+  }
+
+  @include px780 {
+    background-position: right -7px top 0;
+  }
+
+  @include px700 {
+    background-image: url('data:image/svg+xml,<svg width="44" height="100%" viewBox="0 0 44 100%" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="44" height="100%" fill="%23FEEBF0"/></svg>');
+  }
+
+  @include px425 {
+    background-position: right 0 top 0;
+    background-size: 100% var(--header-height);
   }
 }
 
@@ -136,6 +223,11 @@
   justify-self: right;
   grid-column: 2 / 4;
   grid-row: 5 / 6;
+
+  @include px700 {
+    grid-column: 3 / 5;
+    margin-bottom: 35px;
+  }
 }
 
 .hero-grid__text {
@@ -144,6 +236,30 @@
   font-weight: 600;
   font-size: 107px;
   line-height: 1;
+
+  @include px1360 {
+    font-size: 87px;
+  }
+
+  @include px1090 {
+    font-size: 72px;
+  }
+
+  @include px930 {
+    font-size: 50px;
+  }
+
+  @include px780 {
+    font-size: 41px;
+  }
+
+  @include px700 {
+    font-size: 30px;
+  }
+
+  @include px425 {
+    font-size: 24px;
+  }
 }
 
 .hero-grid__text--first {
@@ -152,6 +268,32 @@
   margin-left: 30px;
   font-size: 124px;
   line-height: 0.7;
+
+  @include px1360 {
+    font-size: 100px;
+  }
+
+  @include px1090 {
+    font-size: 80px;
+  }
+
+  @include px930 {
+    font-size: 70px;
+  }
+
+  @include px780 {
+    margin-left: 20px;
+    font-size: 64px;
+  }
+
+  @include px700 {
+    margin-left: 15px;
+    font-size: 40px;
+  }
+
+  @include px425 {
+    font-size: 24px;
+  }
 }
 
 .hero-grid__text--second {
@@ -165,13 +307,79 @@
   margin-right: -154px;
   margin-left: -140px;
   padding-top: 50px;
+
+  @include px1090 {
+    margin-left: -90px;
+  }
+
+  @include px780 {
+    margin-left: -70px;
+  }
+
+  @include px700 {
+    margin-left: -20px;
+  }
+
+  @include px425 {
+    margin-left: -7px;
+  }
 }
 
 .hero-grid__form {
+  position: relative;
   z-index: 2;
   grid-column: 4 / 6;
   grid-row: 6 / 6;
   margin-top: -200px;
   margin-right: -142px;
   margin-left: -70px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 125px;
+    width: 288px;
+    height: 80px;
+    background-image: url("../img/cookie.png");
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include px1090 {
+      width: 220px;
+      height: 60px;
+      background-size: contain;
+    }
+
+    @include px780 {
+      bottom: 186px;
+      width: 152px;
+      height: 42px;
+    }
+
+    @include px700 {
+      bottom: 0;
+    }
+  }
+
+  @include px1090 {
+    margin-right: -95px;
+  }
+
+  @include px780 {
+    margin-right: -70px;
+  }
+
+  @include px700 {
+    grid-column: 2 / 5;
+    grid-row: 6 / 7;
+    margin: 0 -50px 43px;
+    min-height: 100px;
+  }
+
+  @include px425 {
+    grid-column: 1 / 6;
+    margin: 0 -18px 43px;
+  }
 }

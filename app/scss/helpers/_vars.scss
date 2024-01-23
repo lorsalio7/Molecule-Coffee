@@ -22,6 +22,34 @@
   --color-remy: rgb(254, 235, 240); /* #feebf0 */
   --color-snow-drift: rgb(238, 243, 239); /* #eef3ef */
   --side-gap: 188px;
+  --header-height: 102px;
   --full-width: calc(100% - (var(--side-gap) * 2));
   --column-width: calc(var(--full-width) / 5);
+
+  @media (max-width: 1360px) {
+    --side-gap: 140px;
+  }
+
+  @media (max-width: 1090px) {
+    --side-gap: 110px;
+  }
+
+  @media (max-width: 930px) {
+    --side-gap: 100px;
+    --header-height: 85px;
+  }
+
+  @media (max-width: 780px) {
+    --side-gap: 73px;
+    --header-height: 69px;
+  }
+
+  @media (max-width: 700px) {
+    --side-gap: 60px;
+    --header-height: 125px;
+  }
+
+  @media (max-width: 425px) {
+    --side-gap: 25px;
+  }
 }
