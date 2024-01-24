@@ -1,5 +1,29 @@
 "use strict";
 
+var addMaximumScaleToMetaViewport = function addMaximumScaleToMetaViewport() {
+  var el = document.querySelector('meta[name=viewport]');
+  if (el !== null) {
+    var content = el.getAttribute('content');
+    var re = /maximum\-scale=[0-9\.]+/g;
+    if (re.test(content)) {
+      content = content.replace(re, 'maximum-scale=1.0');
+    } else {
+      content = [content, 'maximum-scale=1.0'].join(', ');
+    }
+    el.setAttribute('content', content);
+  }
+};
+var disableIosTextFieldZoom = addMaximumScaleToMetaViewport;
+
+// https://stackoverflow.com/questions/9038625/detect-if-device-is-ios/9039885#9039885
+var checkIsIOS = function checkIsIOS() {
+  return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+};
+if (checkIsIOS()) {
+  disableIosTextFieldZoom();
+}
+;
+;
 document.addEventListener('DOMContentLoaded', function () {
   var promoSlider = document.querySelector(".promo__slider");
   var coffeeSlider = document.querySelector(".coffee-slider");
