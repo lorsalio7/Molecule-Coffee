@@ -6,19 +6,20 @@
 }
 
 .promo__slider .splide__arrow {
+  border: none;
   width: 45px;
   height: 53px;
   background-color: transparent;
   opacity: 1;
 
   @include px780 {
-    width: 28px;
-    height: 24px;
+    width: 24px;
+    height: 28px;
   }
 
   @include px425 {
-    width: 14px;
-    height: 12px;
+    width: 12px;
+    height: 14px;
   }
 }
 
@@ -50,6 +51,20 @@
   width: 45px;
   height: 53px;
   fill: var(--color-mongoose);
+
+  @include px780 {
+    width: 24px;
+    height: 28px;
+  }
+
+  @include px425 {
+    width: 12px;
+    height: 14px;
+  }
+}
+
+.promo__slider .splide__arrow--prev svg {
+  transform: scale(1);
 }
 
 .promo__slider .splide__arrow:active svg {

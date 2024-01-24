@@ -942,6 +942,7 @@ body {
 }
 
 .promo__slider .splide__arrow {
+  border: none;
   width: 45px;
   height: 53px;
   background-color: transparent;
@@ -960,6 +961,12 @@ body {
   width: 45px;
   height: 53px;
   fill: var(--color-mongoose);
+}
+
+.promo__slider .splide__arrow--prev svg {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 .promo__slider .splide__arrow:active svg {
@@ -2443,8 +2450,8 @@ body {
   }
 
   .promo__slider .splide__arrow {
-    width: 28px;
-    height: 24px;
+    width: 24px;
+    height: 28px;
   }
 
   .promo__slider .splide__arrow--prev {
@@ -2453,6 +2460,11 @@ body {
 
   .promo__slider .splide__arrow--next {
     right: 20px;
+  }
+
+  .promo__slider .splide__arrow svg {
+    width: 24px;
+    height: 28px;
   }
 
   .new {
@@ -2879,8 +2891,8 @@ body {
   }
 
   .promo__slider .splide__arrow {
-    width: 14px;
-    height: 12px;
+    width: 12px;
+    height: 14px;
   }
 
   .promo__slider .splide__arrow--prev {
@@ -2889,6 +2901,11 @@ body {
 
   .promo__slider .splide__arrow--next {
     right: 10px;
+  }
+
+  .promo__slider .splide__arrow svg {
+    width: 12px;
+    height: 14px;
   }
 
   .promo__slider .splide__pagination {
