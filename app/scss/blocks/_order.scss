@@ -98,6 +98,7 @@
   }
 
   @include px700 {
+    display: block;
     flex: 0 3 350px;
     flex-direction: column;
   }
@@ -123,7 +124,9 @@
   }
 
   @include px700 {
+    margin-right: auto;
     margin-bottom: 50px;
+    margin-left: auto;
     max-width: 350px;
   }
 
@@ -151,6 +154,7 @@
   }
 
   @include px700 {
+    display: inline-block;
     flex: 0 1 auto;
     flex-direction: row;
     padding-bottom: 34px;

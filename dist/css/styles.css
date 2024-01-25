@@ -2763,6 +2763,7 @@ body {
   }
 
   .order__gallery {
+    display: block;
     -webkit-box-flex: 0;
         -ms-flex: 0 3 350px;
             flex: 0 3 350px;
@@ -2773,11 +2774,14 @@ body {
   }
 
   .order__big-slider {
+    margin-right: auto;
     margin-bottom: 50px;
+    margin-left: auto;
     max-width: 350px;
   }
 
   .order__order-thumb-slider {
+    display: inline-block;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
