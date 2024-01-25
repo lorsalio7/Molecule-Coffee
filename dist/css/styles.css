@@ -2374,6 +2374,14 @@ body {
     --header-height: 69px;
   }
 
+  .page__menu {
+    margin-bottom: 114px;
+  }
+
+  .page__order {
+    margin-bottom: 82px;
+  }
+
   .site-header__site-navigation {
     margin-right: 90px;
   }
@@ -2833,8 +2841,16 @@ body {
     --side-gap: 25px;
   }
 
+  .page__menu {
+    margin-bottom: 42px;
+  }
+
   .page__locations {
     margin-bottom: 90px;
+  }
+
+  .page__order {
+    margin-bottom: 68px;
   }
 
   .site-navigation__item:not(:last-child) {

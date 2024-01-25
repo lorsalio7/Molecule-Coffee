@@ -1,5 +1,13 @@
 .page__menu {
   margin-bottom: 204px;
+
+  @include px780 {
+    margin-bottom: 114px;
+  }
+
+  @include px425 {
+    margin-bottom: 42px;
+  }
 }
 
 .page__locations {
@@ -12,4 +20,12 @@
 
 .page__order {
   margin-bottom: 153px;
+
+  @include px780 {
+    margin-bottom: 82px;
+  }
+
+  @include px425 {
+    margin-bottom: 68px;
+  }
 }
