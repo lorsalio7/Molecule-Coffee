@@ -154,10 +154,13 @@
   }
 
   @include px700 {
-    display: inline-block;
+    display: block;
     flex: 0 1 auto;
     flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
     padding-bottom: 34px;
+    max-width: 400px;
   }
 }
 
