@@ -70,7 +70,7 @@
     }
 
     @include px700 {
-      left: -76px;
+      left: -66px;
     }
 
     @include px425 {
@@ -340,14 +340,24 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    @include px1090 {
-      width: 220px;
-      height: 60px;
+    @include px1360 {
+      bottom: 0;
+      width: 252px;
+      height: 70px;
       background-size: contain;
     }
 
+    @include px1090 {
+      width: 220px;
+      height: 60px;
+    }
+
+    @include px930 {
+      width: 182px;
+      height: 50px;
+    }
+
     @include px780 {
-      bottom: 50px;
       width: 152px;
       height: 42px;
     }
