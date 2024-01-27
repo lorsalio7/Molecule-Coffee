@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page full-height" lang="ru">
+<html class="page no-scroll full-height" lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,26 @@
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="page__body full-height">
+    <div class="preloader">
+      <div class="preloader__container">
+        <svg class="preloader__image preloader-image" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150" fill="none">
+          <path d="M74.5 110.875C85.8218 110.875 95 109.532 95 107.875C95 106.218 85.8218 104.875 74.5 104.875C63.1782 104.875 54 106.218 54 107.875C54 109.532 63.1782 110.875 74.5 110.875Z" fill="#4D1E10"></path>
+          <path class="preloader-image__first-wave" d="M68.5 66.875C68.5 66.875 66.6981 65.3884 64.5531 63.6187C62.7301 62.1148 61.614 59.9202 61.472 57.5616C61.33 55.2021 62.176 52.8904 63.805 51.1794L63.806 51.1785C66.525 48.3232 66.8161 43.9342 64.4971 40.7464C63.3971 39.2334 62.5 38 62.5 38" stroke="#B09C7A" stroke-width="2" stroke-miterlimit="1.5" stroke-dasharray="21.82,27.45,0,0" stroke-dashoffset="39.27" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path class="preloader-image__second-wave" d="M79.0717 66.875C79.0717 66.875 77.0168 65.0834 74.5688 62.9491C72.4408 61.0937 71.1471 58.4622 70.9779 55.6443C70.8076 52.8274 71.7768 50.0593 73.6659 47.9628L73.6671 47.9618C76.8362 44.4454 77.1791 39.2132 74.4945 35.3141C73.2385 33.4877 72.2145 32 72.2145 32" stroke="#B09C7A" stroke-width="2" stroke-miterlimit="1.5" stroke-dasharray="24.25,40.52,0,0" stroke-dashoffset="44.77" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path class="preloader-image__third-wave" d="M87.5 66.875C87.5 66.875 85.676 65.3702 83.513 63.5857C81.7 62.09 80.591 59.9087 80.45 57.5624C80.309 55.2169 81.149 52.9185 82.77 51.2165L82.772 51.2149C85.511 48.3389 85.803 43.9169 83.468 40.7052C82.381 39.2111 81.5 38 81.5 38" stroke="#B09C7A" stroke-width="2" stroke-miterlimit="1.5" stroke-dasharray="21.82,27.45,0,0" stroke-dashoffset="39.27" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M100.999 73.05C100.906 87.871 88.844 99.875 74 99.875C59.098 99.875 47 87.777 47 72.875H101L100.999 73.05Z" fill="#D37E56"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M104.499 74.3745C110.294 74.3745 114.999 79.0797 114.999 84.8745C114.999 90.669 110.294 95.374 104.499 95.374C98.7047 95.374 93.9995 90.669 93.9995 84.8745C93.9995 79.0797 98.7047 74.3745 104.499 74.3745ZM104.499 79.6245C107.397 79.6245 109.749 81.9765 109.749 84.8745C109.749 87.7725 107.397 90.124 104.499 90.124C101.601 90.124 99.249 87.7725 99.249 84.8745C99.249 81.9765 101.601 79.6245 104.499 79.6245Z" fill="#D37E56"></path>
+        </svg>
+      </div>
+    </div>
+    <script>
+      const preloader = document.querySelector(".preloader");
+      
+      window.addEventListener("load", () => {
+        preloader.classList.add("preloader--hide");
+        document.querySelector("html").classList.remove("no-scroll");
+      });
+    </script>
     <div class="wrapper">
       <header class="site-header">
         <div class="site-header__container container"><a class="site-header__logo logo"><img class="logo__image" src="img/logo.svg" alt="Логотип сайта Molecule" width="247" height="82"></a>

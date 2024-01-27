@@ -1,0 +1,23 @@
+@keyframes wavy {
+  0% {
+    stroke-dashoffset: 1px;
+  }
+
+  100% {
+    stroke-dashoffset: -10999px;
+  }
+}
+
+.preloader-image__first-wave,
+.preloader-image__second-wave,
+.preloader-image__third-wave {
+  animation: wavy 350s infinite linear;
+}
+
+.preloader-image__first-wave {
+  animation-delay: 0.2s;
+}
+
+.preloader-image__third-wave {
+  animation-delay: 0.4s;
+}
