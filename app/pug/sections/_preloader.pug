@@ -9,10 +9,36 @@
       path(fill-rule="evenodd" clip-rule="evenodd" d="M104.499 74.3745C110.294 74.3745 114.999 79.0797 114.999 84.8745C114.999 90.669 110.294 95.374 104.499 95.374C98.7047 95.374 93.9995 90.669 93.9995 84.8745C93.9995 79.0797 98.7047 74.3745 104.499 74.3745ZM104.499 79.6245C107.397 79.6245 109.749 81.9765 109.749 84.8745C109.749 87.7725 107.397 90.124 104.499 90.124C101.601 90.124 99.249 87.7725 99.249 84.8745C99.249 81.9765 101.601 79.6245 104.499 79.6245Z" fill="#D37E56")
 script.
   const preloader = document.querySelector(".preloader");
+  const preloaderImage = preloader.querySelector(".preloader__image");
+  function fadeOut(element, duration = 1000) {
+    let el = element;
+    let elStyles = window.getComputedStyle(el);
 
+    if(elStyles.display !== "none") {
+    element.style.opacity = 1;
+      let startTime = performance.now();
+
+      function animate(currentTime) {
+        let elapsedTime = currentTime - startTime;
+        let progress = 1 - (elapsedTime / duration);
+        element.style.opacity = progress;
+        if (progress > 0) {
+          requestAnimationFrame(animate);
+        } else {
+          element.style.cssText = "display: none;";
+        }
+      }
+      requestAnimationFrame(animate);
+    } else {
+      return;
+    }
+  }
   window.addEventListener("load", () => {
-    preloader.classList.add("preloader--hide");
-    document.querySelector("html").classList.remove("no-scroll");
+    fadeOut(preloaderImage, 700);
+    setTimeout(()=> {
+      fadeOut(preloader, 600);
+      document.querySelector("html").classList.remove("no-scroll");
+    },700)
   });
 
 

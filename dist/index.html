@@ -31,10 +31,36 @@
     </div>
     <script>
       const preloader = document.querySelector(".preloader");
+      const preloaderImage = preloader.querySelector(".preloader__image");
+      function fadeOut(element, duration = 1000) {
+        let el = element;
+        let elStyles = window.getComputedStyle(el);
       
+        if(elStyles.display !== "none") {
+        element.style.opacity = 1;
+          let startTime = performance.now();
+      
+          function animate(currentTime) {
+            let elapsedTime = currentTime - startTime;
+            let progress = 1 - (elapsedTime / duration);
+            element.style.opacity = progress;
+            if (progress > 0) {
+              requestAnimationFrame(animate);
+            } else {
+              element.style.cssText = "display: none;";
+            }
+          }
+          requestAnimationFrame(animate);
+        } else {
+          return;
+        }
+      }
       window.addEventListener("load", () => {
-        preloader.classList.add("preloader--hide");
-        document.querySelector("html").classList.remove("no-scroll");
+        fadeOut(preloaderImage, 700);
+        setTimeout(()=> {
+          fadeOut(preloader, 600);
+          document.querySelector("html").classList.remove("no-scroll");
+        },700)
       });
     </script>
     <div class="wrapper">

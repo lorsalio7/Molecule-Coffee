@@ -574,10 +574,6 @@ body {
   background-color: #fff;
 }
 
-.preloader--hide {
-  display: none;
-}
-
 .preloader__container {
   display: -webkit-box;
   display: -ms-flexbox;
