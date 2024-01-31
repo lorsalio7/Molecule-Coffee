@@ -67,6 +67,12 @@
   background-color: transparent;
   opacity: 1;
 
+  @include hover {
+    &:not(:disabled) {
+      opacity: 0.6;
+    }
+  }
+
   @include px1090 {
     width: 35px;
     height: 41px;

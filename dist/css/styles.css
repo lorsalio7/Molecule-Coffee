@@ -1040,6 +1040,8 @@ body {
   height: 53px;
   background-color: transparent;
   opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .promo__slider .splide__arrow--prev {
@@ -3138,6 +3140,14 @@ body {
     fill: var(--color-brown-rust);
     -webkit-transition: fill 0.3s ease-in-out;
     transition: fill 0.3s ease-in-out;
+  }
+
+  .promo__slider .splide__arrow:hover:not(:disabled) {
+    opacity: 0.6;
+  }
+
+  .menu__slider .splide__arrow:hover:not(:disabled) {
+    opacity: 0.6;
   }
 
   .button:hover {

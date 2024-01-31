@@ -12,6 +12,13 @@
   height: 53px;
   background-color: transparent;
   opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+
+  @include hover {
+    &:not(:disabled) {
+      opacity: 0.6;
+    }
+  }
 
   @include px780 {
     width: 24px;
