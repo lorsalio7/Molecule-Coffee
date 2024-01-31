@@ -171,7 +171,16 @@
   height: 53px;
   background-color: transparent;
   transform: rotate(-90deg);
+  transition: opacity 0.3s ease-in-out;
   cursor: pointer;
+
+  &:focus {
+    @include outline;
+  }
+
+  @include hover {
+    opacity: 0.6;
+  }
 
   @include px930 {
     width: 28px;

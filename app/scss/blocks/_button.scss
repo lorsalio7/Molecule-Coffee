@@ -13,6 +13,10 @@
   cursor: pointer;
   user-select: none;
 
+  &:focus {
+    @include outline;
+  }
+
   @include px930 {
     padding: 8px 20px;
     font-size: 20px;

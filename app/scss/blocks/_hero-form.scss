@@ -18,6 +18,10 @@
   color: var(--color-black);
   background-color: var(--color-wild-sand);
 
+  &:focus {
+    @include outline;
+  }
+
   @include px1090 {
     padding: 12px 68px 12px 20px;
     font-size: 20px;
@@ -39,6 +43,10 @@
   height: 52px;
   cursor: pointer;
   user-select: none;
+
+  &:focus {
+    @include outline;
+  }
 
   @include px1090 {
     right: 7px;

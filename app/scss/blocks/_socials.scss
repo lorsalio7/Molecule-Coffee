@@ -27,6 +27,12 @@
   background-position: center;
   background-size: 26px;
   background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+
+  &:focus {
+    @include outline;
+  }
 
   &--vk {
     background-image: url("../img/vk-ic.svg");
@@ -42,6 +48,10 @@
 
   &--tiktok {
     background-image: url("../img/tiktok-ic.svg");
+  }
+
+  @include hover {
+    opacity: 0.6;
   }
 
   @include px1360 {

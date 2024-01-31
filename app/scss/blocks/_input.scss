@@ -7,6 +7,10 @@
   font-size: 18px;
   line-height: 27px;
 
+  &:focus {
+    @include outline-inner;
+  }
+
   @include px1360 {
     font-size: 16px;
   }
