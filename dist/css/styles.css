@@ -714,11 +714,26 @@ body {
 }
 
 .site-navigation__link {
+  position: relative;
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 24px;
   text-decoration: none;
   color: var(--color-black);
+}
+
+.site-navigation__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-japonica);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out;
 }
 
 .hero__container {
@@ -3112,6 +3127,11 @@ body {
 }
 
 @media (hover: hover) {
+  .site-navigation__link:hover::before {
+    width: 50%;
+    opacity: 1;
+  }
+
   .button:hover {
     color: var(--color-eclipse);
     background-color: var(--color-white);
