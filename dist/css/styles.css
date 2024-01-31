@@ -1403,6 +1403,7 @@ body {
 .locations-tabs__control--active {
   color: var(--color-white);
   background-color: var(--color-mongoose);
+  cursor: default;
 }
 
 .locations-tabs__panel {
@@ -3148,6 +3149,14 @@ body {
 
   .menu__slider .splide__arrow:hover:not(:disabled) {
     opacity: 0.6;
+  }
+
+  .locations-tabs__control:hover {
+    background-color: var(--color-aths-special);
+  }
+
+  .locations-tabs__control--active:hover {
+    background-color: var(--color-mongoose);
   }
 
   .button:hover {

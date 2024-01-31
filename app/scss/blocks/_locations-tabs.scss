@@ -15,6 +15,10 @@
   color: var(--color-mongoose);
   background-color: var(--color-white);
 
+  @include hover {
+    background-color: var(--color-aths-special);
+  }
+
   @include px1090 {
     padding: 7px 20px;
     font-size: 20px;
@@ -47,6 +51,11 @@
 .locations-tabs__control--active {
   color: var(--color-white);
   background-color: var(--color-mongoose);
+  cursor: default;
+
+  @include hover {
+    background-color: var(--color-mongoose);
+  }
 }
 
 .locations-tabs__panel {
