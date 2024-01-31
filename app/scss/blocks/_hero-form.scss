@@ -56,6 +56,13 @@
 }
 
 .hero-form__button-icon {
+  @include hover {
+    &.hero-form__button-icon use {
+      fill: var(--color-brown-rust);
+      transition: fill 0.3s ease-in-out;
+    }
+  }
+
   @include px1090 {
     width: 40px;
     height: 40px;
@@ -69,6 +76,7 @@
 
 .hero-form__button-icon use {
   fill: var(--color-japonica);
+  transition: fill 0.3s ease-in-out;
 }
 
 .hero-form__button:active .hero-form__button-icon use {

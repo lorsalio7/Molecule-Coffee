@@ -1017,6 +1017,8 @@ body {
 
 .hero-form__button-icon use {
   fill: var(--color-japonica);
+  -webkit-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
 }
 
 .hero-form__button:active .hero-form__button-icon use {
@@ -3130,6 +3132,12 @@ body {
   .site-navigation__link:hover::before {
     width: 50%;
     opacity: 1;
+  }
+
+  .hero-form__button-icon:hover.hero-form__button-icon use {
+    fill: var(--color-brown-rust);
+    -webkit-transition: fill 0.3s ease-in-out;
+    transition: fill 0.3s ease-in-out;
   }
 
   .button:hover {
