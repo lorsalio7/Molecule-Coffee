@@ -3,11 +3,11 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: calc(var(--header-height) + 77px) auto auto auto auto auto 106px;
 
-  @include px780 {
+  @include max-md {
     grid-template-rows: calc(var(--header-height) + 67px) auto auto auto auto auto 78px;
   }
 
-  @include px700 {
+  @include max-sm {
     grid-template-rows: calc(var(--header-height) + 67px) auto auto auto auto auto auto 43px;
   }
 }
@@ -21,7 +21,7 @@
   border-left: 1px solid var(--color-border);
   height: 100%;
 
-  @include px700 {
+  @include max-sm {
     grid-row: 1 / 9;
   }
 }
@@ -52,7 +52,7 @@
     background-size: contain, 141px 132px;
     background-repeat: no-repeat;
 
-    @include px1360 {
+    @include max-xxl {
       left: -156px;
       width: calc(var(--side-gap) + 15px);
       background-image:
@@ -61,19 +61,19 @@
       background-size: 33.2% 100%, 66.8% auto;
     }
 
-    @include px1090 {
+    @include max-xl {
       left: -126px;
     }
 
-    @include px780 {
+    @include max-md {
       left: -90px;
     }
 
-    @include px700 {
+    @include max-sm {
       left: -66px;
     }
 
-    @include px425 {
+    @include max-xs {
       left: -41px;
       height: 166px;
       background-image: url("data:image/svg+xml,%3Csvg width='70' height='100%' viewBox='0 0 70 100%' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='70' height='100%' fill='%23FFF0E2'/%3E%3C/svg%3E");
@@ -91,33 +91,33 @@
     background-image: url("data:image/svg+xml,%3Csvg width='211' height='50' viewBox='0 0 211 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='211' height='50' fill='%23EEF3EF'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
 
-    @include px780 {
+    @include max-md {
       top: 62%;
       height: 30px;
     }
 
-    @include px700 {
+    @include max-sm {
       top: 66%;
     }
 
-    @include px425 {
+    @include max-xs {
       top: 60%;
     }
   }
 
-  @include px930 {
+  @include max-lg {
     background-position:
       top 64% left 0,
       top calc(55% + 79px + 140px) center;
   }
 
-  @include px780 {
+  @include max-md {
     background-image: url("data:image/svg+xml,%3Csvg width='213' height='123' viewBox='0 0 213 123' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='213' height='123' fill='%23E3E2DF'/%3E%3C/svg%3E");
     background-position: top 74% left 0;
     background-size: contain;
   }
 
-  @include px425 {
+  @include max-xs {
     background-position: top 66% left 0;
   }
 }
@@ -137,7 +137,7 @@
   background-size: 25px 63px;
   background-repeat: no-repeat;
 
-  @include px780 {
+  @include max-md {
     background-image: none;
   }
 }
@@ -163,28 +163,28 @@
     background-size: contain;
     background-repeat: no-repeat;
 
-    @include px1360 {
+    @include max-xxl {
       width: calc(var(--side-gap) + 15px);
     }
 
-    @include px1090 {
+    @include max-xl {
       right: calc((var(--side-gap) + 17px) * -1);
     }
   }
 
-  @include px930 {
+  @include max-lg {
     background-position: right -4px top 0;
   }
 
-  @include px780 {
+  @include max-md {
     background-position: right -7px top 0;
   }
 
-  @include px700 {
+  @include max-sm {
     background-image: url('data:image/svg+xml,<svg width="44" height="100%" viewBox="0 0 44 100%" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="44" height="100%" fill="%23FEEBF0"/></svg>');
   }
 
-  @include px425 {
+  @include max-xs {
     background-image: url('data:image/svg+xml,<svg width="44" height="100%" viewBox="0 0 44 100%" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="%23FEEBF0"/></svg>');
     background-position: right 0 top 0;
     background-size: 100% var(--header-height);
@@ -219,7 +219,7 @@
   grid-column: 2 / 4;
   grid-row: 5 / 7;
 
-  @include px700 {
+  @include max-sm {
     grid-column: 3 / 5;
     margin-bottom: 35px;
   }
@@ -232,27 +232,27 @@
   font-size: 107px;
   line-height: 1;
 
-  @include px1360 {
+  @include max-xxl {
     font-size: 87px;
   }
 
-  @include px1090 {
+  @include max-xl {
     font-size: 72px;
   }
 
-  @include px930 {
+  @include max-lg {
     font-size: 50px;
   }
 
-  @include px780 {
+  @include max-md {
     font-size: 41px;
   }
 
-  @include px700 {
+  @include max-sm {
     font-size: 30px;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 24px;
   }
 }
@@ -264,29 +264,29 @@
   font-size: 124px;
   line-height: 0.7;
 
-  @include px1360 {
+  @include max-xxl {
     font-size: 100px;
   }
 
-  @include px1090 {
+  @include max-xl {
     font-size: 80px;
   }
 
-  @include px930 {
+  @include max-lg {
     font-size: 70px;
   }
 
-  @include px780 {
+  @include max-md {
     margin-left: 20px;
     font-size: 64px;
   }
 
-  @include px700 {
+  @include max-sm {
     margin-left: 15px;
     font-size: 40px;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 24px;
   }
 }
@@ -303,19 +303,19 @@
   margin-left: -140px;
   padding-top: 50px;
 
-  @include px1090 {
+  @include max-xl {
     margin-left: -90px;
   }
 
-  @include px780 {
+  @include max-md {
     margin-left: -70px;
   }
 
-  @include px700 {
+  @include max-sm {
     margin-left: -20px;
   }
 
-  @include px425 {
+  @include max-xs {
     margin-left: -7px;
   }
 }
@@ -340,49 +340,49 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    @include px1360 {
+    @include max-xxl {
       bottom: 0;
       width: 252px;
       height: 70px;
       background-size: contain;
     }
 
-    @include px1090 {
+    @include max-xl {
       width: 220px;
       height: 60px;
     }
 
-    @include px930 {
+    @include max-lg {
       width: 182px;
       height: 50px;
     }
 
-    @include px780 {
+    @include max-md {
       width: 152px;
       height: 42px;
     }
 
-    @include px700 {
+    @include max-sm {
       bottom: 0;
     }
   }
 
-  @include px1090 {
+  @include max-xl {
     margin-right: -95px;
   }
 
-  @include px780 {
+  @include max-md {
     margin-right: -70px;
   }
 
-  @include px700 {
+  @include max-sm {
     grid-column: 2 / 5;
     grid-row: 7 / 8;
     margin: 0 -50px;
     min-height: 100px;
   }
 
-  @include px425 {
+  @include max-xs {
     grid-column: 1 / 6;
     margin: 0 -18px;
   }

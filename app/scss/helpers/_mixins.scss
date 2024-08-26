@@ -57,50 +57,57 @@
 
 /* @include hover-focus {} */
 
-@mixin px1360 {
-  @media (max-width: 1360px) {
+$xs: 425px;
+$sm: 700px;
+$md: 780px;
+$lg: 930px;
+$xl: 1090px;
+$xxl: 1360px;
+
+@mixin max-xxl {
+  @media (max-width: $xxl) {
     @content;
   }
 }
 
-/* @include px1360 {} */
+/* @include max-xxl {} */
 
-@mixin px1090 {
-  @media (max-width: 1090px) {
+@mixin max-xl {
+  @media (max-width: $xl) {
     @content;
   }
 }
 
-/* @include px1090 {} */
+/* @include max-xl {} */
 
-@mixin px930 {
-  @media (max-width: 930px) {
+@mixin max-lg {
+  @media (max-width: $lg) {
     @content;
   }
 }
 
-/* @include px930 {} */
+/* @include max-lg {} */
 
-@mixin px780 {
-  @media (max-width: 780px) {
+@mixin max-md {
+  @media (max-width: $md) {
     @content;
   }
 }
 
-/* @include px780 {} */
+/* @include max-md {} */
 
-@mixin px700 {
-  @media (max-width: 700px) {
+@mixin max-sm {
+  @media (max-width: $sm) {
     @content;
   }
 }
 
-/* @include px700 {} */
+/* @include max-sm {} */
 
-@mixin px425 {
-  @media (max-width: 425px) {
+@mixin max-xs {
+  @media (max-width: $xs) {
     @content;
   }
 }
 
-/* @include px425 {} */
+/* @include max-xs {} */

@@ -440,17 +440,17 @@ template {
 
 /* @include hover-focus {} */
 
-/* @include px1360 {} */
+/* @include max-xxl {} */
 
-/* @include px1090 {} */
+/* @include max-xl {} */
 
-/* @include px930 {} */
+/* @include max-lg {} */
 
-/* @include px780 {} */
+/* @include max-md {} */
 
-/* @include px700 {} */
+/* @include max-sm {} */
 
-/* @include px425 {} */
+/* @include max-xs {} */
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;

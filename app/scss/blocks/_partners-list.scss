@@ -10,14 +10,14 @@
   margin-bottom: 11px;
   object-fit: contain;
 
-  @include px930 {
+  @include max-lg {
     margin-right: 9px;
     margin-bottom: 5px;
     width: auto;
     max-height: 40px;
   }
 
-  @include px780 {
+  @include max-md {
     max-height: 30px;
   }
 }

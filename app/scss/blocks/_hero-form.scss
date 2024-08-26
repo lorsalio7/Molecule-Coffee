@@ -22,12 +22,12 @@
     @include outline;
   }
 
-  @include px1090 {
+  @include max-xl {
     padding: 12px 68px 12px 20px;
     font-size: 20px;
   }
 
-  @include px780 {
+  @include max-md {
     padding: 4px 68px 4px 20px;
     font-size: 16px;
   }
@@ -48,14 +48,14 @@
     @include outline;
   }
 
-  @include px1090 {
+  @include max-xl {
     right: 7px;
     top: 7px;
     width: 40px;
     height: 40px;
   }
 
-  @include px780 {
+  @include max-md {
     right: 4px;
     top: 4px;
     width: 30px;
@@ -71,12 +71,12 @@
     }
   }
 
-  @include px1090 {
+  @include max-xl {
     width: 40px;
     height: 40px;
   }
 
-  @include px780 {
+  @include max-md {
     width: 30px;
     height: 30px;
   }

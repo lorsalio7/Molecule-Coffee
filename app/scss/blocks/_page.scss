@@ -6,11 +6,11 @@
 .page__menu {
   margin-bottom: 204px;
 
-  @include px780 {
+  @include max-md {
     margin-bottom: 114px;
   }
 
-  @include px425 {
+  @include max-xs {
     margin-bottom: 42px;
   }
 }
@@ -18,7 +18,7 @@
 .page__locations {
   margin-bottom: 120px;
 
-  @include px425 {
+  @include max-xs {
     margin-bottom: 90px;
   }
 }
@@ -26,11 +26,11 @@
 .page__order {
   margin-bottom: 153px;
 
-  @include px780 {
+  @include max-md {
     margin-bottom: 82px;
   }
 
-  @include px425 {
+  @include max-xs {
     margin-bottom: 68px;
   }
 }

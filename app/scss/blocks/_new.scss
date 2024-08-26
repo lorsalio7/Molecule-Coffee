@@ -2,16 +2,16 @@
   padding-top: 188px;
   padding-bottom: 106px;
 
-  @include px930 {
+  @include max-lg {
     padding-top: 120px;
   }
 
-  @include px780 {
+  @include max-md {
     padding-top: 88px;
     padding-bottom: 55px;
   }
 
-  @include px425 {
+  @include max-xs {
     padding-top: 82px;
     padding-bottom: 45px;
   }
@@ -32,16 +32,16 @@
     background-position: top 0 left 0;
     background-repeat: no-repeat;
 
-    @include px1360 {
+    @include max-xxl {
       left: 0;
     }
 
-    @include px1090 {
+    @include max-xl {
       width: 27px;
       height: 169px;
     }
 
-    @include px425 {
+    @include max-xs {
       width: 15px;
       height: 100px;
     }
@@ -54,24 +54,24 @@
   display: flex;
   align-items: flex-start;
 
-  @include px1360 {
+  @include max-xxl {
     --new-side-gap: 60px;
 
     margin-right: var(--new-side-gap);
     margin-left: var(--new-side-gap);
   }
 
-  @include px1090 {
+  @include max-xl {
     --new-side-gap: 35px;
 
     justify-content: space-between;
   }
 
-  @include px700 {
+  @include max-sm {
     flex-direction: column-reverse;
   }
 
-  @include px425 {
+  @include max-xs {
     --new-side-gap: 20px;
   }
 }
@@ -84,15 +84,15 @@
   margin-left: var(--new-side-gap);
   max-width: 642px;
 
-  @include px1360 {
+  @include max-xxl {
     margin-left: 0;
   }
 
-  @include px1090 {
+  @include max-xl {
     margin-right: 50px;
   }
 
-  @include px700 {
+  @include max-sm {
     margin-right: 0;
   }
 }
@@ -106,18 +106,18 @@
   line-height: 30px;
   color: var(--color-black);
 
-  @include px1090 {
+  @include max-xl {
     margin-bottom: 30px;
     font-size: 40px;
     line-height: normal;
   }
 
-  @include px780 {
+  @include max-md {
     margin-bottom: 26px;
     font-size: 30px;
   }
 
-  @include px425 {
+  @include max-xs {
     margin-bottom: 15px;
     font-size: 24px;
   }
@@ -131,16 +131,16 @@
   font-size: 64px;
   color: var(--color-japonica);
 
-  @include px1090 {
+  @include max-xl {
     margin-bottom: 30px;
     font-size: 48px;
   }
 
-  @include px780 {
+  @include max-md {
     font-size: 40px;
   }
 
-  @include px425 {
+  @include max-xs {
     margin-bottom: 20px;
     font-size: 32px;
   }
@@ -154,7 +154,7 @@
   white-space: nowrap;
   color: var(--color-silver);
 
-  @include px425 {
+  @include max-xs {
     margin-left: 18px;
     font-size: 20px;
   }
@@ -168,18 +168,18 @@
   line-height: 30px;
   color: var(--color-black);
 
-  @include px1090 {
+  @include max-xl {
     margin-bottom: 36px;
     font-size: 38px;
     line-height: normal;
   }
 
-  @include px780 {
+  @include max-md {
     margin-bottom: 26px;
     font-size: 30px;
   }
 
-  @include px425 {
+  @include max-xs {
     margin-bottom: 0;
     font-size: 24px;
   }
@@ -192,11 +192,11 @@
   line-height: 30px;
   color: var(--color-black);
 
-  @include px1090 {
+  @include max-xl {
     font-size: 16px;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 14px;
     line-height: 1.7;
   }
@@ -206,22 +206,22 @@
   flex-shrink: 0.5;
   margin-right: 60px;
 
-  @include px1090 {
+  @include max-xl {
     flex-shrink: 0.7;
     margin-right: 0;
   }
 
-  @include px780 {
+  @include max-md {
     flex-shrink: 1;
   }
 
-  @include px700 {
+  @include max-sm {
     align-self: center;
     margin-bottom: 20px;
     max-width: 280px;
   }
 
-  @include px425 {
+  @include max-xs {
     max-width: 200px;
   }
 }

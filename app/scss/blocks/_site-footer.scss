@@ -7,19 +7,19 @@
 
   padding: 88px var(--site-footer-side-padding);
 
-  @include px1360 {
+  @include max-xxl {
     --site-footer-side-padding: 40px;
   }
 
-  @include px1090 {
+  @include max-xl {
     --site-footer-side-padding: 30px;
   }
 
-  @include px780 {
+  @include max-md {
     padding: 68px var(--site-footer-side-padding);
   }
 
-  @include px700 {
+  @include max-sm {
     --site-footer-side-padding: 10px;
 
     padding: 40px var(--site-footer-side-padding);

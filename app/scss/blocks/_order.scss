@@ -13,16 +13,16 @@
     background-position: top 0 left 0;
     background-repeat: no-repeat;
 
-    @include px1360 {
+    @include max-xxl {
       left: 0;
     }
 
-    @include px1090 {
+    @include max-xl {
       width: 27px;
       height: 169px;
     }
 
-    @include px700 {
+    @include max-sm {
       left: unset;
       right: 0;
       width: 25px;
@@ -39,15 +39,15 @@
   margin-right: var(--order-side-gap);
   margin-left: var(--order-side-gap);
 
-  @include px1360 {
+  @include max-xxl {
     --order-side-gap: 60px;
   }
 
-  @include px1090 {
+  @include max-xl {
     --order-side-gap: 35px;
   }
 
-  @include px700 {
+  @include max-sm {
     --order-side-gap: 10px;
 
     flex-direction: column;
@@ -59,15 +59,15 @@
   margin-right: 50px;
   max-width: 575px;
 
-  @include px1360 {
+  @include max-xxl {
     margin-right: 30px;
   }
 
-  @include px780 {
+  @include max-md {
     margin-right: 10px;
   }
 
-  @include px700 {
+  @include max-sm {
     margin-right: 0;
     margin-bottom: 50px;
     width: 100%;
@@ -81,23 +81,23 @@
   flex-direction: row;
   align-items: center;
 
-  @include px1360 {
+  @include max-xxl {
     flex: 0 3 470px;
   }
 
-  @include px1090 {
+  @include max-xl {
     flex: 0 3 400px;
   }
 
-  @include px930 {
+  @include max-lg {
     flex: 0 3 350px;
   }
 
-  @include px780 {
+  @include max-md {
     flex: 0 3 288px;
   }
 
-  @include px700 {
+  @include max-sm {
     display: block;
     flex: 0 3 350px;
     flex-direction: column;
@@ -107,30 +107,30 @@
 .order__big-slider {
   max-width: 429px;
 
-  @include px1360 {
+  @include max-xxl {
     max-width: 340px;
   }
 
-  @include px1090 {
+  @include max-xl {
     max-width: 290px;
   }
 
-  @include px930 {
+  @include max-lg {
     max-width: 240px;
   }
 
-  @include px780 {
+  @include max-md {
     max-width: 200px;
   }
 
-  @include px700 {
+  @include max-sm {
     margin-right: auto;
     margin-bottom: 50px;
     margin-left: auto;
     max-width: 350px;
   }
 
-  @include px425 {
+  @include max-xs {
     max-width: 300px;
   }
 }
@@ -141,19 +141,19 @@
   flex-direction: column;
   align-items: center;
 
-  @include px1360 {
+  @include max-xxl {
     flex: 0 1 130px;
   }
 
-  @include px1090 {
+  @include max-xl {
     flex: 0 1 110px;
   }
 
-  @include px780 {
+  @include max-md {
     flex: 0 1 88px;
   }
 
-  @include px700 {
+  @include max-sm {
     display: block;
     flex: 0 1 auto;
     flex-direction: row;
@@ -182,12 +182,12 @@
     opacity: 0.6;
   }
 
-  @include px930 {
+  @include max-lg {
     width: 28px;
     height: 24px;
   }
 
-  @include px700 {
+  @include max-sm {
     display: none;
   }
 }
@@ -196,11 +196,11 @@
   order: 1;
   margin-bottom: 53px;
 
-  @include px1360 {
+  @include max-xxl {
     margin-bottom: 30px;
   }
 
-  @include px930 {
+  @include max-lg {
     margin-bottom: 27px;
   }
 }
@@ -209,11 +209,11 @@
   order: 3;
   margin-top: 53px;
 
-  @include px1360 {
+  @include max-xxl {
     margin-top: 30px;
   }
 
-  @include px930 {
+  @include max-lg {
     margin-top: 27px;
   }
 }
@@ -224,7 +224,7 @@
   height: 53px;
   fill: var(--color-japonica);
 
-  @include px930 {
+  @include max-lg {
     width: 28px;
     height: 24px;
   }

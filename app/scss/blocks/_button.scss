@@ -17,12 +17,12 @@
     @include outline;
   }
 
-  @include px930 {
+  @include max-lg {
     padding: 8px 20px;
     font-size: 20px;
   }
 
-  @include px780 {
+  @include max-md {
     padding: 6px 14px;
     font-size: 15px;
   }

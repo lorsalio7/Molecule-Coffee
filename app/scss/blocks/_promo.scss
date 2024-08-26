@@ -20,12 +20,12 @@
     }
   }
 
-  @include px780 {
+  @include max-md {
     width: 24px;
     height: 28px;
   }
 
-  @include px425 {
+  @include max-xs {
     width: 12px;
     height: 14px;
   }
@@ -34,11 +34,11 @@
 .promo__slider .splide__arrow--prev {
   left: 38px;
 
-  @include px780 {
+  @include max-md {
     left: 20px;
   }
 
-  @include px425 {
+  @include max-xs {
     left: 10px;
   }
 }
@@ -46,11 +46,11 @@
 .promo__slider .splide__arrow--next {
   right: 38px;
 
-  @include px780 {
+  @include max-md {
     right: 20px;
   }
 
-  @include px425 {
+  @include max-xs {
     right: 10px;
   }
 }
@@ -60,12 +60,12 @@
   height: 53px;
   fill: var(--color-mongoose);
 
-  @include px780 {
+  @include max-md {
     width: 24px;
     height: 28px;
   }
 
-  @include px425 {
+  @include max-xs {
     width: 12px;
     height: 14px;
   }
@@ -82,11 +82,11 @@
 .promo__slider .splide__pagination {
   bottom: 35px;
 
-  @include px930 {
+  @include max-lg {
     bottom: 18px;
   }
 
-  @include px425 {
+  @include max-xs {
     bottom: 9px;
   }
 }
@@ -98,13 +98,13 @@
   background-color: var(--color-mongoose);
   opacity: 1;
 
-  @include px930 {
+  @include max-lg {
     margin: 3px;
     width: 8px;
     height: 8px;
   }
 
-  @include px425 {
+  @include max-xs {
     margin: 3px 5px;
     width: 4px;
     height: 4px;

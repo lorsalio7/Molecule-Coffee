@@ -4,13 +4,13 @@
   justify-content: space-between;
   margin: 0;
 
-  @include px700 {
+  @include max-sm {
     flex-direction: column;
   }
 }
 
 .footer-list__item:nth-child(2) {
-  @include px780 {
+  @include max-md {
     flex-shrink: 1;
   }
 }
@@ -18,11 +18,11 @@
 .footer-list__item:not(:last-child) {
   margin-right: 30px;
 
-  @include px930 {
+  @include max-lg {
     margin-right: 20px;
   }
 
-  @include px700 {
+  @include max-sm {
     margin-right: 0;
     margin-bottom: 30px;
   }
@@ -35,16 +35,16 @@
   line-height: 27px;
   color: var(--color-white);
 
-  @include px1360 {
+  @include max-xxl {
     font-size: 18px;
     line-height: 24px;
   }
 
-  @include px930 {
+  @include max-lg {
     font-size: 16px;
   }
 
-  @include px780 {
+  @include max-md {
     font-size: 13px;
     line-height: 16px;
   }

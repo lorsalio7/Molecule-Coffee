@@ -5,15 +5,15 @@
   padding: 11px 6px;
   min-height: 306px;
 
-  @include px1360 {
+  @include max-xxl {
     min-height: 250px;
   }
 
-  @include px930 {
+  @include max-lg {
     min-height: 215px;
   }
 
-  @include px780 {
+  @include max-md {
     padding: 11px 4px;
     min-height: 200px;
   }
@@ -25,11 +25,11 @@
   justify-content: space-between;
   min-height: 153px;
 
-  @include px1360 {
+  @include max-xxl {
     min-height: 120px;
   }
 
-  @include px930 {
+  @include max-lg {
     min-height: 100px;
   }
 }
@@ -43,16 +43,16 @@
   text-align: center;
   color: var(--color-black);
 
-  @include px1360 {
+  @include max-xxl {
     font-size: 17px;
     line-height: 1.4;
   }
 
-  @include px930 {
+  @include max-lg {
     font-size: 13px;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 16px;
   }
 }
@@ -72,11 +72,11 @@
   margin: 2px 12px;
   min-height: 60px;
 
-  @include px1360 {
+  @include max-xxl {
     margin: 2px 6px;
   }
 
-  @include px930 {
+  @include max-lg {
     margin: 2px 3px;
   }
 }
@@ -89,16 +89,16 @@
   line-height: 30px;
   color: var(--color-black);
 
-  @include px1360 {
+  @include max-xxl {
     margin-top: 0;
     font-size: 24px;
   }
 
-  @include px1090 {
+  @include max-xl {
     font-size: 22px;
   }
 
-  @include px930 {
+  @include max-lg {
     font-size: 20px;
   }
 }
@@ -109,12 +109,12 @@
   font-size: 14px;
   color: var(--color-black);
 
-  @include px1360 {
+  @include max-xxl {
     margin-bottom: 6px;
     font-size: 13px;
   }
 
-  @include px930 {
+  @include max-lg {
     font-size: 11px;
   }
 }
@@ -128,12 +128,12 @@
   max-width: 205px;
   object-fit: contain;
 
-  @include px1360 {
+  @include max-xxl {
     height: 110px;
     max-width: 150px;
   }
 
-  @include px930 {
+  @include max-lg {
     height: 90px;
     max-width: 88px;
   }

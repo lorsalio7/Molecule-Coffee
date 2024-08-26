@@ -4,32 +4,32 @@
   height: 429px;
   object-fit: contain;
 
-  @include px1360 {
+  @include max-xxl {
     width: 340px;
     height: 340px;
   }
 
-  @include px1090 {
+  @include max-xl {
     width: 290px;
     height: 290px;
   }
 
-  @include px930 {
+  @include max-lg {
     width: 240px;
     height: 240px;
   }
 
-  @include px780 {
+  @include max-md {
     width: 200px;
     height: 200px;
   }
 
-  @include px700 {
+  @include max-sm {
     width: 350px;
     height: 350px;
   }
 
-  @include px425 {
+  @include max-xs {
     width: 100%;
     height: 300px;
   }

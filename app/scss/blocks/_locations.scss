@@ -9,15 +9,15 @@
   margin-left: var(--locations-side-gap);
   max-width: 1238px;
 
-  @include px1360 {
+  @include max-xxl {
     --locations-side-gap: 60px;
   }
 
-  @include px1090 {
+  @include max-xl {
     --locations-side-gap: 35px;
   }
 
-  @include px700 {
+  @include max-sm {
     --locations-side-gap: 10px;
   }
 }
@@ -30,17 +30,17 @@
   line-height: 30px;
   color: var(--color-black);
 
-  @include px1360 {
+  @include max-xxl {
     margin-bottom: 50px;
     font-size: 40px;
   }
 
-  @include px1090 {
+  @include max-xl {
     margin-bottom: 30px;
     font-size: 36px;
   }
 
-  @include px780 {
+  @include max-md {
     margin-bottom: 20px;
     font-size: 24px;
   }

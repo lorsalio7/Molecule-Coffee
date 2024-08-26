@@ -11,11 +11,11 @@
     @include outline-inner;
   }
 
-  @include px1360 {
+  @include max-xxl {
     font-size: 16px;
   }
 
-  @include px1090 {
+  @include max-xl {
     padding: 2px 8px;
   }
 }

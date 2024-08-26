@@ -6,11 +6,11 @@
   line-height: 30px;
   text-align: center;
 
-  @include px780 {
+  @include max-md {
     font-size: 24px;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 24px;
     line-height: 1.1;
   }
@@ -21,7 +21,7 @@
   flex-direction: column;
   min-height: 306px;
 
-  @include px1360 {
+  @include max-xxl {
     min-height: 250px;
   }
 }
@@ -29,7 +29,7 @@
 .menu__slider:not(:last-child) {
   margin-bottom: 65px;
 
-  @include px425 {
+  @include max-xs {
     margin-bottom: 40px;
   }
 }
@@ -42,19 +42,19 @@
   padding-bottom: 31px;
   max-width: 1208px;
 
-  @include px1360 {
+  @include max-xxl {
     --side-slider-gap: 80px;
   }
 
-  @include px1090 {
+  @include max-xl {
     --side-slider-gap: 60px;
   }
 
-  @include px930 {
+  @include max-lg {
     --side-slider-gap: 57px;
   }
 
-  @include px780 {
+  @include max-md {
     --side-slider-gap: 42px;
   }
 }
@@ -73,12 +73,12 @@
     }
   }
 
-  @include px1090 {
+  @include max-xl {
     width: 35px;
     height: 41px;
   }
 
-  @include px930 {
+  @include max-lg {
     width: 24px;
     height: 28px;
   }
@@ -87,19 +87,19 @@
 .menu__slider .splide__arrow--prev {
   left: 36px;
 
-  @include px1360 {
+  @include max-xxl {
     left: 8px;
   }
 
-  @include px1090 {
+  @include max-xl {
     left: 4px;
   }
 
-  @include px930 {
+  @include max-lg {
     left: 9px;
   }
 
-  @include px780 {
+  @include max-md {
     left: 0;
   }
 }
@@ -107,19 +107,19 @@
 .menu__slider .splide__arrow--next {
   right: 36px;
 
-  @include px1360 {
+  @include max-xxl {
     right: 8px;
   }
 
-  @include px1090 {
+  @include max-xl {
     right: 4px;
   }
 
-  @include px930 {
+  @include max-lg {
     right: 9px;
   }
 
-  @include px780 {
+  @include max-md {
     right: 0;
   }
 }
@@ -129,12 +129,12 @@
   height: 53px;
   fill: var(--color-japonica);
 
-  @include px1090 {
+  @include max-xl {
     width: 35px;
     height: 41px;
   }
 
-  @include px930 {
+  @include max-lg {
     width: 24px;
     height: 28px;
   }

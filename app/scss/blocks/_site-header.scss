@@ -14,7 +14,7 @@
   width: 100%;
   height: 100%;
 
-  @include px700 {
+  @include max-sm {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -27,17 +27,17 @@
   height: var(--header-height);
   background-color: #fff;
 
-  @include px1090 {
+  @include max-xl {
     margin-top: auto;
     margin-right: 45px;
     height: auto;
   }
 
-  @include px930 {
+  @include max-lg {
     margin-right: 38px;
   }
 
-  @include px700 {
+  @include max-sm {
     margin-right: 0;
     margin-bottom: 15px;
   }
@@ -46,19 +46,19 @@
 .site-header__site-navigation {
   margin-right: 164px;
 
-  @include px1360 {
+  @include max-xxl {
     margin-right: 130px;
   }
 
-  @include px1090 {
+  @include max-xl {
     margin-right: 100px;
   }
 
-  @include px780 {
+  @include max-md {
     margin-right: 90px;
   }
 
-  @include px700 {
+  @include max-sm {
     margin-right: 0;
   }
 }

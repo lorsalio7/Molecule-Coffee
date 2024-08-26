@@ -15,12 +15,12 @@
     background-size: 164px 281px;
     background-repeat: no-repeat;
 
-    @include px1360 {
+    @include max-xxl {
       right: 0;
       width: calc(var(--side-gap) + 15px);
     }
 
-    @include px700 {
+    @include max-sm {
       height: calc(166px + var(--header-height));
     }
   }
@@ -34,7 +34,7 @@
   transform: translateX(-50%);
 
   &::before {
-    @include px425 {
+    @include max-xs {
       content: "";
       grid-column: 1 / 1;
       grid-row: 1 / 1;

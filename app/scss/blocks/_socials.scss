@@ -11,11 +11,11 @@
   margin-right: 21px;
   margin-bottom: 10px;
 
-  @include px1360 {
+  @include max-xxl {
     margin-right: 15px;
   }
 
-  @include px930 {
+  @include max-lg {
     margin-right: 10px;
   }
 }
@@ -54,13 +54,13 @@
     opacity: 0.6;
   }
 
-  @include px1360 {
+  @include max-xxl {
     width: 22px;
     height: 22px;
     background-size: 22px;
   }
 
-  @include px930 {
+  @include max-lg {
     width: 18px;
     height: 18px;
     background-size: 18px;
