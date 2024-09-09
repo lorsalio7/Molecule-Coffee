@@ -220,15 +220,26 @@
     margin-bottom: 20px;
     max-width: 280px;
   }
-
-  @include max-xs {
-    max-width: 200px;
-  }
 }
 
 .new__image {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 390px;
+  height: 557px;
   object-fit: contain;
+
+  @include max-xl {
+    width: 310px;
+    height: 443px;
+  }
+
+  @include max-md {
+    width: 280px;
+    height: 400px;
+  }
+
+  @include max-xs {
+    width: 210px;
+    height: 300px;
+  }
 }
