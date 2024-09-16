@@ -2,6 +2,10 @@ let locationTabs = document.querySelector("#locations");
 
 if(locationTabs) {
   let firstMapContainer = locationTabs.querySelector("#map-1");
+  let firstMapCoordinates = +firstMapContainer.dataset.coordinates;
+
+  // console.log(typeof(firstMapCoordinates));
+
   let secondMapContainer = locationTabs.querySelector("#map-2");
   let thirdMapContainer = locationTabs.querySelector("#map-3");
   let mapLoaded = false;
@@ -16,7 +20,7 @@ if(locationTabs) {
       let scrollY = window.scrollY;
       if(!mapLoaded && scrollY >= (mapOffset.top - 500)) {
         ymaps.ready(() => {
-          let firstMapPlacemark = new ymaps.Placemark([53.91158508909563,27.59594398101469], {}, {
+          let firstMapPlacemark = new ymaps.Placemark([firstMapCoordinates], {}, {
             iconLayout: "default#image",
             iconImageHref: "img/map-pin.svg",
             iconImageSize: [106, 107],
@@ -24,7 +28,7 @@ if(locationTabs) {
           });
 
           let firstMap = new ymaps.Map(firstMapContainer, {
-            center: [53.91158508909563,27.59594398101469],
+            center: [firstMapCoordinates],
             zoom: 17,
             controls: [],
             type: "yandex#map"
