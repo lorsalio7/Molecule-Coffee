@@ -1974,6 +1974,10 @@ body {
     background-size: contain;
   }
 
+  .promo .container {
+    padding: 0;
+  }
+
   .new__container::before {
     left: 0;
   }

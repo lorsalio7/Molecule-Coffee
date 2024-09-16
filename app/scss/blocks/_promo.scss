@@ -1,3 +1,9 @@
+.promo .container {
+  @include max-xxl {
+    padding: 0;
+  }
+}
+
 .promo__image {
   display: block;
   width: 100%;
