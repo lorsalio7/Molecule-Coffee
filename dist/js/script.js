@@ -185,10 +185,6 @@ if (mapsTabs) {
 var locationTabs = document.querySelector("#locations");
 if (locationTabs) {
   var firstMapContainer = locationTabs.querySelector("#map-1");
-  var firstMapCoordinates = +firstMapContainer.dataset.coordinates;
-
-  // console.log(typeof(firstMapCoordinates));
-
   var secondMapContainer = locationTabs.querySelector("#map-2");
   var thirdMapContainer = locationTabs.querySelector("#map-3");
   var mapLoaded = false;
@@ -198,16 +194,16 @@ if (locationTabs) {
     clearTimeout(scrollTimeout);
     scrollTimeout = setTimeout(function () {
       var scrollY = window.scrollY;
-      if (!mapLoaded && scrollY >= mapOffset.top - 500) {
+      if (!mapLoaded && scrollY >= mapOffset.top - 900) {
         ymaps.ready(function () {
-          var firstMapPlacemark = new ymaps.Placemark([firstMapCoordinates], {}, {
+          var firstMapPlacemark = new ymaps.Placemark([53.91158508909563, 27.59594398101469], {}, {
             iconLayout: "default#image",
             iconImageHref: "img/map-pin.svg",
             iconImageSize: [106, 107],
             iconImageOffset: [-50, -80]
           });
           var firstMap = new ymaps.Map(firstMapContainer, {
-              center: [firstMapCoordinates],
+              center: [53.91158508909563, 27.59594398101469],
               zoom: 17,
               controls: [],
               type: "yandex#map"
