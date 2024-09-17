@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
   let seasonalMenuSlider = document.querySelector(".seasonal-menu-slider");
   let orderSlider = document.querySelector(".order-big-slider");
   let orderThumbSlider = document.querySelector(".order-thumb-slider");
+  let locationTabSlider = document.querySelector(".locations-tabs__slider");
+
 
   if(promoSlider) {
     new Splide(promoSlider, {
@@ -142,5 +144,38 @@ document.addEventListener('DOMContentLoaded', function() {
     }).mount();
 
     orderSlider.sync(orderThumbSlider);
+  }
+
+  if(locationTabSlider) {
+    locationTabSlider = new Splide(locationTabSlider, {
+      drag   : "free",
+      perPage: 2,
+      arrowPath: "M17.4107 13.5893C17.7362 13.2638 18.2638 13.2638 18.5893 13.5893L24.4818 19.4818C24.8072 19.8072 24.8072 20.3349 24.4818 20.6603L18.5893 26.5529C18.2638 26.8783 17.7362 26.8783 17.4107 26.5529C17.0853 26.2274 17.0853 25.6998 17.4107 25.3744L22.714 20.0711L17.4107 14.7678C17.0853 14.4423 17.0853 13.9147 17.4107 13.5893Z",
+      perMove: 1,
+      gap: 11,
+      autoWidth: true,
+      snap: true,
+      omitEnd: true,
+      pagination: false,
+      mediaQuery: "max",
+      breakpoints: {
+        780: {
+          gap: 6,
+        }
+      }
+    });
+
+    locationTabSlider.on('overflow', function ( isOverflow ) {
+      locationTabSlider.go( 0 );
+      if(isOverflow) {
+        locationTabSlider.options = {
+          drag: isOverflow,
+          arrows: isOverflow,
+          clones: undefined
+        };
+      }
+    })
+
+    locationTabSlider.mount();
   }
 });

@@ -1389,9 +1389,8 @@ body {
 }
 
 .locations__content {
-  --locations-side-gap: 116px;
-  margin-right: var(--locations-side-gap);
-  margin-left: var(--locations-side-gap);
+  margin-right: auto;
+  margin-left: auto;
   max-width: 1238px;
 }
 
@@ -1404,6 +1403,33 @@ body {
   color: var(--color-black);
 }
 
+.locations-tabs__slider .splide__arrow {
+  border-radius: 0;
+  width: 54px;
+  height: 54px;
+}
+
+.locations-tabs__slider .splide__arrow[disabled] {
+  display: none;
+}
+
+.locations-tabs__slider .splide__arrow svg {
+  width: 40px;
+  height: 40px;
+}
+
+.locations-tabs__slider .splide__arrow--next {
+  right: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#fff));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+}
+
+.locations-tabs__slider .splide__arrow--prev {
+  left: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(#fff));
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+}
+
 .locations-tabs__controls {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1411,6 +1437,7 @@ body {
 }
 
 .locations-tabs__control {
+  display: inline-block;
   border-top: 2px solid var(--color-mongoose);
   border-right: 2px solid var(--color-mongoose);
   border-left: 2px solid var(--color-mongoose);
@@ -1427,10 +1454,6 @@ body {
 .locations-tabs__control:focus {
   outline: 2px solid var(--color-outline);
   outline-offset: -2px;
-}
-
-.locations-tabs__control:not(:last-child) {
-  margin-right: 11px;
 }
 
 .locations-tabs__control--active {
@@ -2041,7 +2064,8 @@ body {
   }
 
   .locations__content {
-    --locations-side-gap: 60px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
 
   .locations__title {
@@ -2307,12 +2331,18 @@ body {
   }
 
   .locations__content {
-    --locations-side-gap: 35px;
+    padding-right: 35px;
+    padding-left: 35px;
   }
 
   .locations__title {
     margin-bottom: 30px;
     font-size: 36px;
+  }
+
+  .locations-tabs__slider .splide__arrow {
+    width: 46px;
+    height: 46px;
   }
 
   .locations-tabs__control {
@@ -2757,13 +2787,14 @@ body {
     font-size: 24px;
   }
 
+  .locations-tabs__slider .splide__arrow {
+    width: 44px;
+    height: 44px;
+  }
+
   .locations-tabs__control {
     padding: 6px 15px;
     font-size: 15px;
-  }
-
-  .locations-tabs__control:not(:last-child) {
-    margin-right: 6px;
   }
 
   .locations-tabs__map-wrapper {
@@ -2971,7 +3002,13 @@ body {
   }
 
   .locations__content {
-    --locations-side-gap: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .locations-tabs__slider .splide__arrow {
+    width: 38px;
+    height: 38px;
   }
 
   .locations-tabs__control {
@@ -3254,6 +3291,11 @@ body {
 
   .menu-card__title {
     font-size: 16px;
+  }
+
+  .locations-tabs__slider .splide__arrow {
+    width: 26px;
+    height: 26px;
   }
 
   .locations-tabs__control {

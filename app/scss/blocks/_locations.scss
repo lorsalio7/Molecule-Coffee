@@ -3,22 +3,23 @@
 }
 
 .locations__content {
-  --locations-side-gap: 116px;
-
-  margin-right: var(--locations-side-gap);
-  margin-left: var(--locations-side-gap);
+  margin-right: auto;
+  margin-left: auto;
   max-width: 1238px;
 
   @include max-xxl {
-    --locations-side-gap: 60px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
 
   @include max-xl {
-    --locations-side-gap: 35px;
+    padding-right: 35px;
+    padding-left: 35px;
   }
 
   @include max-sm {
-    --locations-side-gap: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 

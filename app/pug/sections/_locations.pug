@@ -3,11 +3,15 @@ section.page__locations.locations#locations
     .locations__content
       h2.locations__title Как нас найти
       .locations__tabs.locations-tabs
-        .locations-tabs__header
-          .locations-tabs__controls
-            a(href="#locations-tabs-panel-1").locations-tabs__control.locations-tabs__control--active БГУИР 4 к.
-            a(href="#locations-tabs-panel-2").locations-tabs__control журфак БГУ
-            a(href="#locations-tabs-panel-3").locations-tabs__control Юрфак БГУ
+        .locations-tabs__slider.splide
+          .locations-tabs__header.splide__track
+            .locations-tabs__controls.splide__list
+              li.splide__slide
+                a(href="#locations-tabs-panel-1").locations-tabs__control.locations-tabs__control--active БГУИР 4 к.
+              li.splide__slide
+                a(href="#locations-tabs-panel-2").locations-tabs__control журфак БГУ
+              li.splide__slide
+                a(href="#locations-tabs-panel-3").locations-tabs__control Юрфак БГУ
         .locations-tabs__panel.locations-tabs__panel--active#locations-tabs-panel-1
           .locations-tabs__map-wrapper
             .locations-tabs__map#map-1(data-coordinates="53.91158508909563,27.59594398101469")
@@ -17,3 +21,6 @@ section.page__locations.locations#locations
         .locations-tabs__panel#locations-tabs-panel-3
           .locations-tabs__map-wrapper
             .locations-tabs__map#map-3
+        .locations-tabs__panel#locations-tabs-panel-4
+          .locations-tabs__map-wrapper
+            .locations-tabs__map#map-4
