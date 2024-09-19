@@ -49,22 +49,18 @@
 }
 
 .new__content {
-  --new-side-gap: 111px;
-
   display: flex;
   align-items: flex-start;
 
   @include max-xxl {
-    --new-side-gap: 60px;
-
-    margin-right: var(--new-side-gap);
-    margin-left: var(--new-side-gap);
+    padding-right: 60px;
+    padding-left: 60px;
   }
 
   @include max-xl {
-    --new-side-gap: 35px;
-
     justify-content: space-between;
+    padding-right: 35px;
+    padding-left: 35px;
   }
 
   @include max-sm {
@@ -72,7 +68,8 @@
   }
 
   @include max-xs {
-    --new-side-gap: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -81,7 +78,7 @@
   flex-shrink: 2;
   flex-direction: column;
   margin-right: 120px;
-  margin-left: var(--new-side-gap);
+  margin-left: 111px;
   max-width: 642px;
 
   @include max-xxl {

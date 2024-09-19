@@ -9,12 +9,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   if(promoSlider) {
-    new Splide(promoSlider, {
+    promoSlider = new Splide(promoSlider, {
       perMove: 1,
       arrows: true,
       pagination: true,
-      rewind : true
-    }).mount();
+      rewind : true,
+      lazyLoad: "nearby",
+    });
+    promoSlider.on( 'mounted', function () {
+      setTimeout(() => {
+        promoSlider.root.classList.remove("promo__slider--skeleton");
+      },500)
+    } );
+    promoSlider.mount();
   }
 
   if(coffeeSlider) {
@@ -24,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
       arrows: true,
       pagination: false,
       gap: 32,
+      lazyLoad: "nearby",
       breakpoints: {
         1250: {
           gap: 20
@@ -51,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
       arrows: true,
       pagination: false,
       gap: 32,
+      lazyLoad: "nearby",
       breakpoints: {
         1250: {
           gap: 20
@@ -78,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
       arrows: true,
       pagination: false,
       gap: 32,
+      lazyLoad: "nearby",
       breakpoints: {
         1250: {
           gap: 20
@@ -106,7 +116,9 @@ document.addEventListener('DOMContentLoaded', function() {
       perMove: 1,
       arrows: false,
       pagination: false,
-      gap: 32
+      gap: 32,
+      lazyLoad: "sequential",
+      preloadPages:1,
     }).mount();
 
     thumbSliderPrevButton.addEventListener("click", (e) => {
@@ -121,10 +133,12 @@ document.addEventListener('DOMContentLoaded', function() {
       direction: 'ttb',
       height: 629,
       perPage: 3,
+      lazyLoad: "sequential",
       arrows: false,
       isNavigation: true,
       gap: 20,
       pagination: false,
+      preloadPages:1,
       breakpoints: {
         1360: {
           height: 529

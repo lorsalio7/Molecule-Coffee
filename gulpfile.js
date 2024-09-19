@@ -138,7 +138,7 @@ function images() {
     imagemin([
       imagemin.gifsicle({interlaced: true}),
       pngquant({quality: [0.7, 0.9]}),
-      imagemin.mozjpeg({quality: 85, progressive: true}),
+      imagemin.mozjpeg({quality: 80, progressive: true}),
       imagemin.svgo({
         plugins: [
           {removeViewBox: false},

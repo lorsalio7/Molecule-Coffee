@@ -1,6 +1,14 @@
+let yandexMapsCDN = document.querySelector("#yandex-maps-cdn");
 let mapsTabs = document.querySelector(".locations-tabs");
+let isLoadedYandexCDN = false;
 
 if(mapsTabs) {
+  let yandexMapsLink = yandexMapsCDN.getAttribute("data-src");
+  setTimeout(() => {
+    yandexMapsCDN.removeAttribute("data-src");
+    yandexMapsCDN.setAttribute("src", yandexMapsLink);
+    isLoadedYandexCDN = true;
+  }, 2700);
   let mapTabButtons = mapsTabs.querySelectorAll(".locations-tabs__control");
   let mapTabPanels = mapsTabs.querySelectorAll(".locations-tabs__panel");
 

@@ -18,21 +18,27 @@ html(lang="ru" class= htmlClass + additionalClasses)
     link(rel="shortcut icon" type="image/svg+xml" href="img/favicon.svg")
     link(rel="shortcut icon" type="image/png" href="img/favicon.png")
     //- script(src="https://api-maps.yandex.ru/2.1/?apikey=3cf37168-683d-428e-b93d-cca7432f0695&lang=ru_RU")
-    script(src="https://api-maps.yandex.ru/2.1/?apikey=КЛЮЧ&lang=ru_RU")
+    script(data-src="https://api-maps.yandex.ru/2.1/?apikey=КЛЮЧ&lang=ru_RU" id="yandex-maps-cdn" defer)
     block styles
       link(rel="preload", href="fonts/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin)
       link(rel="preload", href="fonts/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin)
       link(rel="preload", href="fonts/MontserratBold.woff2" as="font" type="font/woff2" crossorigin)
       link(rel="preload", href="fonts/PlayfairDisplayRegular.woff2" as="font" type="font/woff2" crossorigin)
+      link(rel="preload", href="/img/promo-image-1.jpg" as="image" type="image/jpg" crossorigin)
+      link(rel="preload", href="/img/promo-image-2.jpg" as="image" type="image/jpg" crossorigin)
+      link(rel="preload", href="/img/promo-image-3.jpg" as="image" type="image/jpg" crossorigin)
+      link(rel="preload" href="libs/js/splide.min.js" as="script" crossorigin)
+      link(rel="preload" href="js/script.min.js" as="script" crossorigin)
       link(rel="stylesheet", href="libs/css/splide.min.css")
-      link(rel="stylesheet", href="css/styles.min.css")
+      //- link(rel="preload", href="libs/css/splide.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'")
+      link(rel="stylesheet", href="css/styles.min.css" media="all")
   body(class= bodyClass).full-height
     include ../sections/_preloader.pug
     .wrapper
       block content
 
     block scripts
+      script(src="libs/js/splide.min.js" defer)
       script(src="libs/js/focus-visible.min.js" defer)
       script(src="libs/js/cleave.min.js" defer)
-      script(src="libs/js/splide.min.js" defer)
       script(src="js/script.min.js" defer)

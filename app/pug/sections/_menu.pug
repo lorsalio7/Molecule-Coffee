@@ -21,7 +21,7 @@ section.page__menu.menu#menu
                         p.menu-card__price= param.price
                         if param.volume
                           span.menu-card__volume= param.volume
-                img(src= item.img, width= item.img_width height= item.img_height alt= item.title).menu-card__image
+                img(data-splide-lazy= item.img, width= item.img_width height= item.img_height alt= item.title).menu-card__image
     .snacks-slider.menu__slider.splide(aria-labelledby="snacks-menu-heading")
       h3#snacks-menu-heading.menu__slider-title Закуски
       .splide__arrows
@@ -42,7 +42,7 @@ section.page__menu.menu#menu
                         p.menu-card__price= param.price
                         if param.volume
                           span.menu-card__volume= param.volume
-                img(src= item.img, width= item.img_width height= item.img_height alt= item.title).menu-card__image
+                img(data-splide-lazy= item.img, width= item.img_width height= item.img_height alt= item.title).menu-card__image
     .seasonal-menu-slider.menu__slider.splide(aria-labelledby="seasonal-menu-heading")
       h3#seasonal-menu-heading.menu__slider-title Сезонное меню
       .splide__arrows
@@ -63,4 +63,4 @@ section.page__menu.menu#menu
                         p.menu-card__price= param.price
                         if param.volume
                           span.menu-card__volume= param.volume
-                img(src= item.img, width= item.img_width height= item.img_height alt= item.title).menu-card__image
+                img(data-splide-lazy= item.img, width= item.img_width height= item.img_height alt= item.title).menu-card__image

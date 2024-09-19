@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page no-scroll full-height" lang="ru">
+<html class="page full-height" lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +8,18 @@
     <meta name="description" content="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur">
     <link rel="shortcut icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=КЛЮЧ&amp;lang=ru_RU"></script>
+    <script data-src="https://api-maps.yandex.ru/2.1/?apikey=КЛЮЧ&amp;lang=ru_RU" id="yandex-maps-cdn" defer></script>
     <link rel="preload" href="fonts/MontserratRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/MontserratSemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/MontserratBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/PlayfairDisplayRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/img/promo-image-1.jpg" as="image" type="image/jpg" crossorigin>
+    <link rel="preload" href="/img/promo-image-2.jpg" as="image" type="image/jpg" crossorigin>
+    <link rel="preload" href="/img/promo-image-3.jpg" as="image" type="image/jpg" crossorigin>
+    <link rel="preload" href="libs/js/splide.min.js" as="script" crossorigin>
+    <link rel="preload" href="js/script.min.js" as="script" crossorigin>
     <link rel="stylesheet" href="libs/css/splide.min.css">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.min.css" media="all">
   </head>
   <body class="page__body full-height">
     <div class="preloader">
@@ -56,16 +61,16 @@
         }
       }
       window.addEventListener("load", () => {
-        fadeOut(preloaderImage, 700);
+        fadeOut(preloaderImage, 500);
         setTimeout(()=> {
           fadeOut(preloader, 600);
           document.querySelector("html").classList.remove("no-scroll");
-        },700)
+        },500)
       });
     </script>
     <div class="wrapper">
       <header class="site-header">
-        <div class="site-header__container container"><a class="site-header__logo logo"><img class="logo__image" src="img/logo.svg" alt="Логотип сайта Molecule" width="247" height="82"></a>
+        <div class="site-header__container container"><a class="site-header__logo logo" href="/"><img class="logo__image" src="img/logo.svg" alt="Логотип сайта Molecule" width="247" height="82"></a>
           <nav class="site-header__site-navigation site-navigation">
             <ul class="site-navigation__list">
               <li class="site-navigation__item"><a class="site-navigation__link" href="#promo">Акции</a></li>
@@ -98,7 +103,7 @@
         <section class="promo" id="promo">
           <div class="container">
             <h2 class="visually-hidden">Промо информация</h2>
-            <div class="promo__slider splide">
+            <div class="promo__slider promo__slider--skeleton splide">
               <div class="splide__arrows">
                 <button class="splide__arrow splide__arrow--prev" type="button">
                   <svg width="45" height="53" aria-hidden="true">
@@ -113,9 +118,9 @@
               </div>
               <div class="splide__track">
                 <ul class="splide__list">
-                  <li class="splide__slide"><img class="promo__image" src="img/promo-image-2.jpg" width="1440" height="897" alt="Седьмой кофе в подарок"></li>
-                  <li class="splide__slide"><img class="promo__image" src="img/promo-image-1.jpg" width="1440" height="897" alt="Molecule делаем кофе с любовью"></li>
-                  <li class="splide__slide"><img class="promo__image" src="img/promo-image-3.jpg" width="1440" height="897" alt="Проснись и учись вместе с кофе Molecule"></li>
+                  <li class="splide__slide"><img class="promo__image" data-splide-lazy="img/promo-image-2.jpg" width="1440" height="897" alt="Седьмой кофе в подарок"></li>
+                  <li class="splide__slide"><img class="promo__image" data-splide-lazy="img/promo-image-1.jpg" width="1440" height="897" alt="Molecule делаем кофе с любовью"></li>
+                  <li class="splide__slide"><img class="promo__image" data-splide-lazy="img/promo-image-3.jpg" width="1440" height="897" alt="Проснись и учись вместе с кофе Molecule"></li>
                 </ul>
               </div>
             </div>
@@ -167,7 +172,7 @@
                             <p class="menu-card__price">4.3</p><span class="menu-card__volume">400</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/cappuccino.png" width="91" height="143" alt="Капучино">
+                      </div><img class="menu-card__image" data-splide-lazy="img/cappuccino.png" width="91" height="143" alt="Капучино">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -182,7 +187,7 @@
                             <p class="menu-card__price">4.3</p><span class="menu-card__volume">400</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/latte.png" width="118" height="154" alt="Латте">
+                      </div><img class="menu-card__image" data-splide-lazy="img/latte.png" width="118" height="154" alt="Латте">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -197,7 +202,7 @@
                             <p class="menu-card__price">5.3</p><span class="menu-card__volume">400</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/raf.png" width="91" height="143" alt="Раф">
+                      </div><img class="menu-card__image" data-splide-lazy="img/raf.png" width="91" height="143" alt="Раф">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -209,7 +214,7 @@
                             <p class="menu-card__price">2.2</p><span class="menu-card__volume">200</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/espresso.png" width="91" height="143" alt="Эспрессо">
+                      </div><img class="menu-card__image" data-splide-lazy="img/espresso.png" width="91" height="143" alt="Эспрессо">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -224,7 +229,7 @@
                             <p class="menu-card__price">3.1</p><span class="menu-card__volume">300</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/americano.png" width="89" height="140" alt="Американо">
+                      </div><img class="menu-card__image" data-splide-lazy="img/americano.png" width="89" height="140" alt="Американо">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -242,7 +247,7 @@
                             <p class="menu-card__price">4.3</p><span class="menu-card__volume">400</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/cappuccino.png" width="91" height="143" alt="Капучино">
+                      </div><img class="menu-card__image" data-splide-lazy="img/cappuccino.png" width="91" height="143" alt="Капучино">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -254,7 +259,7 @@
                             <p class="menu-card__price">2.2</p><span class="menu-card__volume">200</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/espresso.png" width="91" height="143" alt="Эспрессо">
+                      </div><img class="menu-card__image" data-splide-lazy="img/espresso.png" width="91" height="143" alt="Эспрессо">
                     </article>
                   </li>
                 </ul>
@@ -285,7 +290,7 @@
                             <p class="menu-card__price">3</p>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/crunchy.png" width="112" height="144" alt="Батончики crunchy">
+                      </div><img class="menu-card__image" data-splide-lazy="img/crunchy.png" width="112" height="144" alt="Батончики crunchy">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -297,7 +302,7 @@
                             <p class="menu-card__price">4.3</p><span class="menu-card__volume">180</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/sandwich-with-cheese.png" width="141" height="137" alt="Сандвич с ветчиной и сыром">
+                      </div><img class="menu-card__image" data-splide-lazy="img/sandwich-with-cheese.png" width="141" height="137" alt="Сандвич с ветчиной и сыром">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -309,7 +314,7 @@
                             <p class="menu-card__price">5</p><span class="menu-card__volume">180</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/sandwich-with-red-fish.png" width="148" height="132" alt="Сандвич с красной рыбой">
+                      </div><img class="menu-card__image" data-splide-lazy="img/sandwich-with-red-fish.png" width="148" height="132" alt="Сандвич с красной рыбой">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -321,7 +326,7 @@
                             <p class="menu-card__price">4.3</p><span class="menu-card__volume">180</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/chicken-sandwich.png" width="146" height="137" alt="Сандвич с курицей">
+                      </div><img class="menu-card__image" data-splide-lazy="img/chicken-sandwich.png" width="146" height="137" alt="Сандвич с курицей">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -333,7 +338,7 @@
                             <p class="menu-card__price">3</p>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/snickers-cookie.png" width="162" height="118" alt="Печенье">
+                      </div><img class="menu-card__image" data-splide-lazy="img/snickers-cookie.png" width="162" height="118" alt="Печенье">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -345,7 +350,7 @@
                             <p class="menu-card__price">4.3</p><span class="menu-card__volume">180</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/sandwich-with-cheese.png" width="141" height="137" alt="Сандвич с ветчиной и сыром">
+                      </div><img class="menu-card__image" data-splide-lazy="img/sandwich-with-cheese.png" width="141" height="137" alt="Сандвич с ветчиной и сыром">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -357,7 +362,7 @@
                             <p class="menu-card__price">5</p><span class="menu-card__volume">180</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/sandwich-with-red-fish.png" width="148" height="132" alt="Сандвич с красной рыбой">
+                      </div><img class="menu-card__image" data-splide-lazy="img/sandwich-with-red-fish.png" width="148" height="132" alt="Сандвич с красной рыбой">
                     </article>
                   </li>
                 </ul>
@@ -391,7 +396,7 @@
                             <p class="menu-card__price">3.7</p><span class="menu-card__volume">300</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/ice-latte.png" width="98" height="149" alt="Айс латте">
+                      </div><img class="menu-card__image" data-splide-lazy="img/ice-latte.png" width="98" height="149" alt="Айс латте">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -406,7 +411,7 @@
                             <p class="menu-card__price">4.3</p><span class="menu-card__volume">400</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/ginger-pumpkin-latte.png" width="120" height="153" alt="Имбирно-тыквенный латте">
+                      </div><img class="menu-card__image" data-splide-lazy="img/ginger-pumpkin-latte.png" width="120" height="153" alt="Имбирно-тыквенный латте">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -421,7 +426,7 @@
                             <p class="menu-card__price">5.5</p><span class="menu-card__volume">400</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/bounty.png" width="91" height="143" alt="Баунти">
+                      </div><img class="menu-card__image" data-splide-lazy="img/bounty.png" width="91" height="143" alt="Баунти">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -436,7 +441,7 @@
                             <p class="menu-card__price">4.3</p><span class="menu-card__volume">400</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/сappuccino-lemonade.png" width="206" height="167" alt="Капучино">
+                      </div><img class="menu-card__image" data-splide-lazy="img/сappuccino-lemonade.png" width="206" height="167" alt="Капучино">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -451,7 +456,7 @@
                             <p class="menu-card__price">5.5</p><span class="menu-card__volume">400</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/snickers.png" width="91" height="143" alt="Сникерс">
+                      </div><img class="menu-card__image" data-splide-lazy="img/snickers.png" width="91" height="143" alt="Сникерс">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -466,7 +471,7 @@
                             <p class="menu-card__price">3.7</p><span class="menu-card__volume">300</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/ice-latte.png" width="98" height="149" alt="Айс латте">
+                      </div><img class="menu-card__image" data-splide-lazy="img/ice-latte.png" width="98" height="149" alt="Айс латте">
                     </article>
                   </li>
                   <li class="menu__card splide__slide">
@@ -481,7 +486,7 @@
                             <p class="menu-card__price">4.3</p><span class="menu-card__volume">400</span>
                           </div>
                         </div>
-                      </div><img class="menu-card__image" src="img/ginger-pumpkin-latte.png" width="120" height="153" alt="Имбирно-тыквенный латте">
+                      </div><img class="menu-card__image" data-splide-lazy="img/ginger-pumpkin-latte.png" width="120" height="153" alt="Имбирно-тыквенный латте">
                     </article>
                   </li>
                 </ul>
@@ -567,10 +572,10 @@
                 <div class="order__big-slider order-big-slider splide">
                   <div class="splide__track">
                     <ul class="splide__list">
-                      <li class="splide__slide"><img class="order-big-slider__image" src="img/order-slide-1.png" width="429" height="429" alt="Sorso кофе 1"></li>
-                      <li class="splide__slide"><img class="order-big-slider__image" src="img/order-slide-2.png" width="429" height="429" alt="Sorso кофе 3"></li>
-                      <li class="splide__slide"><img class="order-big-slider__image" src="img/order-slide-3.png" width="429" height="429" alt="Sorso кофе 2"></li>
-                      <li class="splide__slide"><img class="order-big-slider__image" src="img/order-slide-1.png" width="429" height="429" alt="Sorso кофе 1"></li>
+                      <li class="splide__slide"><img class="order-big-slider__image" data-splide-lazy="img/order-slide-1.png" width="429" height="429" alt="Sorso кофе 1"></li>
+                      <li class="splide__slide"><img class="order-big-slider__image" data-splide-lazy="img/order-slide-2.png" width="429" height="429" alt="Sorso кофе 3"></li>
+                      <li class="splide__slide"><img class="order-big-slider__image" data-splide-lazy="img/order-slide-3.png" width="429" height="429" alt="Sorso кофе 2"></li>
+                      <li class="splide__slide"><img class="order-big-slider__image" data-splide-lazy="img/order-slide-1.png" width="429" height="429" alt="Sorso кофе 1"></li>
                     </ul>
                   </div>
                 </div>
@@ -588,10 +593,10 @@
                   <div class="order-thumb-slider splide">
                     <div class="splide__track">
                       <ul class="splide__list">
-                        <li class="splide__slide"><img class="order-thumb-slider__image" src="img/order-slide-1-thumb.png" width="98" height="158" alt="Превью кофе Sorso 1"></li>
-                        <li class="splide__slide"><img class="order-thumb-slider__image" src="img/order-slide-2-thumb.png" width="98" height="158" alt="Превью кофе Sorso 2"></li>
-                        <li class="splide__slide"><img class="order-thumb-slider__image" src="img/order-slide-3-thumb.png" width="98" height="158" alt="Превью кофе Sorso 3"></li>
-                        <li class="splide__slide"><img class="order-thumb-slider__image" src="img/order-slide-1-thumb.png" width="98" height="158" alt="Превью кофе Sorso 1"></li>
+                        <li class="splide__slide"><img class="order-thumb-slider__image" data-splide-lazy="img/order-slide-1-thumb.png" width="98" height="158" alt="Превью кофе Sorso 1"></li>
+                        <li class="splide__slide"><img class="order-thumb-slider__image" data-splide-lazy="img/order-slide-2-thumb.png" width="98" height="158" alt="Превью кофе Sorso 2"></li>
+                        <li class="splide__slide"><img class="order-thumb-slider__image" data-splide-lazy="img/order-slide-3-thumb.png" width="98" height="158" alt="Превью кофе Sorso 3"></li>
+                        <li class="splide__slide"><img class="order-thumb-slider__image" data-splide-lazy="img/order-slide-1-thumb.png" width="98" height="158" alt="Превью кофе Sorso 1"></li>
                       </ul>
                     </div>
                   </div>
@@ -641,9 +646,9 @@
         </div>
       </footer>
     </div>
+    <script src="libs/js/splide.min.js" defer></script>
     <script src="libs/js/focus-visible.min.js" defer></script>
     <script src="libs/js/cleave.min.js" defer></script>
-    <script src="libs/js/splide.min.js" defer></script>
     <script src="js/script.min.js" defer></script>
   </body>
 </html>
