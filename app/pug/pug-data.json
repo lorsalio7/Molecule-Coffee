@@ -16,7 +16,7 @@
           "volume": 400
         }
       ],
-      "img": "img/cappuccino.png",
+      "img": "img/content/product/cappuccino.png",
       "img_width": 91,
       "img_height": 143,
       "color": "aths-special"
@@ -33,7 +33,7 @@
           "volume": 400
         }
       ],
-      "img": "img/latte.png",
+      "img": "img/content/product/latte.png",
       "img_width": 118,
       "img_height": 154,
       "color": "cararra"
@@ -50,7 +50,7 @@
           "volume": 400
         }
       ],
-      "img": "img/raf.png",
+      "img": "img/content/product/raf.png",
       "img_width": 91,
       "img_height": 143,
       "color": "serenade"
@@ -63,7 +63,7 @@
           "volume": 200
         }
       ],
-      "img": "img/espresso.png",
+      "img": "img/content/product/espresso.png",
       "img_width": 91,
       "img_height": 143,
       "color": "remy"
@@ -80,7 +80,7 @@
           "volume": 300
         }
       ],
-      "img": "img/americano.png",
+      "img": "img/content/product/americano.png",
       "img_width": 89,
       "img_height": 140,
       "color": "snow-drift"
@@ -101,7 +101,7 @@
           "volume": 400
         }
       ],
-      "img": "img/cappuccino.png",
+      "img": "img/content/product/cappuccino.png",
       "img_width": 91,
       "img_height": 143,
       "color": "aths-special"
@@ -114,7 +114,7 @@
           "volume": 200
         }
       ],
-      "img": "img/espresso.png",
+      "img": "img/content/product/espresso.png",
       "img_width": 91,
       "img_height": 143,
       "color": "remy"
@@ -128,7 +128,7 @@
           "price": 3
         }
       ],
-      "img": "img/crunchy.png",
+      "img": "img/content/product/crunchy.png",
       "img_width": 112,
       "img_height": 144,
       "color": "aths-special"
@@ -141,7 +141,7 @@
           "volume": 180
         }
       ],
-      "img": "img/sandwich-with-cheese.png",
+      "img": "img/content/product/sandwich-with-cheese.png",
       "img_width": 141,
       "img_height": 137,
       "color": "cararra"
@@ -154,7 +154,7 @@
           "volume": 180
         }
       ],
-      "img": "img/sandwich-with-red-fish.png",
+      "img": "img/content/product/sandwich-with-red-fish.png",
       "img_width": 148,
       "img_height": 132,
       "color": "serenade"
@@ -167,7 +167,7 @@
           "volume": 180
         }
       ],
-      "img": "img/chicken-sandwich.png",
+      "img": "img/content/product/chicken-sandwich.png",
       "img_width": 146,
       "img_height": 137,
       "color": "remy"
@@ -179,7 +179,7 @@
           "price": 3
         }
       ],
-      "img": "img/snickers-cookie.png",
+      "img": "img/content/product/snickers-cookie.png",
       "img_width": 162,
       "img_height": 118,
       "color": "snow-drift"
@@ -192,7 +192,7 @@
           "volume": 180
         }
       ],
-      "img": "img/sandwich-with-cheese.png",
+      "img": "img/content/product/sandwich-with-cheese.png",
       "img_width": 141,
       "img_height": 137,
       "color": "cararra"
@@ -205,7 +205,7 @@
           "volume": 180
         }
       ],
-      "img": "img/sandwich-with-red-fish.png",
+      "img": "img/content/product/sandwich-with-red-fish.png",
       "img_width": 148,
       "img_height": 132,
       "color": "serenade"
@@ -224,7 +224,7 @@
           "volume": 300
         }
       ],
-      "img": "img/ice-latte.png",
+      "img": "img/content/product/ice-latte.png",
       "img_width": 98,
       "img_height": 149,
       "color": "aths-special"
@@ -241,7 +241,7 @@
           "volume": 400
         }
       ],
-      "img": "img/ginger-pumpkin-latte.png",
+      "img": "img/content/product/ginger-pumpkin-latte.png",
       "img_width": 120,
       "img_height": 153,
       "color": "cararra"
@@ -258,7 +258,7 @@
           "volume": 400
         }
       ],
-      "img": "img/bounty.png",
+      "img": "img/content/product/bounty.png",
       "img_width": 91,
       "img_height": 143,
       "color": "serenade"
@@ -275,7 +275,7 @@
           "volume": 400
         }
       ],
-      "img": "img/сappuccino-lemonade.png",
+      "img": "img/content/product/сappuccino-lemonade.png",
       "img_width": 206,
       "img_height": 167,
       "color": "remy"
@@ -292,7 +292,7 @@
           "volume": 400
         }
       ],
-      "img": "img/snickers.png",
+      "img": "img/content/product/snickers.png",
       "img_width": 91,
       "img_height": 143,
       "color": "snow-drift"
@@ -309,7 +309,7 @@
           "volume": 300
         }
       ],
-      "img": "img/ice-latte.png",
+      "img": "img/content/product/ice-latte.png",
       "img_width": 98,
       "img_height": 149,
       "color": "aths-special"
@@ -326,7 +326,7 @@
           "volume": 400
         }
       ],
-      "img": "img/ginger-pumpkin-latte.png",
+      "img": "img/content/product/ginger-pumpkin-latte.png",
       "img_width": 120,
       "img_height": 153,
       "color": "cararra"

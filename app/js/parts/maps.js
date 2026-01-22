@@ -18,7 +18,7 @@ if(locationTabs) {
         ymaps.ready(() => {
           let firstMapPlacemark = new ymaps.Placemark([53.91158508909563,27.59594398101469], {}, {
             iconLayout: "default#image",
-            iconImageHref: "img/map-pin.svg",
+            iconImageHref: "img/icons/map-pin.svg",
             iconImageSize: [106, 107],
             iconImageOffset: [-50, -80]
           });
@@ -33,12 +33,12 @@ if(locationTabs) {
               "<div>" +
               "<div id='first-map-zoom-in' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-in'>" +
               "<svg width='20' height='20' aria-hidden='true'>" +
-              "<use xlink:href='img/sprite.svg#plus-ic'></use>" +
+              "<use xlink:href='img/icons/sprite/sprite.svg#plus-ic'></use>" +
               "</svg>" +
               "</div>" +
               "<div id='first-map-zoom-out' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-out'>" +
               "<svg width='20' height='20' aria-hidden='true'>" +
-              "<use xlink:href='img/sprite.svg#minus-ic'></use>" +
+              "<use xlink:href='img/icons/sprite/sprite.svg#minus-ic'></use>" +
               "</svg>" +
               "</div>" +
               "</div>", {
@@ -83,7 +83,7 @@ if(locationTabs) {
         ymaps.ready(() => {
           let secondMapPlacemark = new ymaps.Placemark([53.90560630126001,27.532580720901436], {}, {
             iconLayout: "default#image",
-            iconImageHref: "img/map-pin.svg",
+            iconImageHref: "img/icons/map-pin.svg",
             iconImageSize: [106, 107],
             iconImageOffset: [-30, -75]
           });
@@ -98,12 +98,12 @@ if(locationTabs) {
               "<div>" +
               "<div id='second-map-zoom-in' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-in'>" +
               "<svg width='20' height='20' aria-hidden='true'>" +
-              "<use xlink:href='img/sprite.svg#plus-ic'></use>" +
+              "<use xlink:href='img/icons/sprite/sprite.svg#plus-ic'></use>" +
               "</svg>" +
               "</div>" +
               "<div id='second-map-zoom-out' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-out'>" +
               "<svg width='20' height='20' aria-hidden='true'>" +
-              "<use xlink:href='img/sprite.svg#minus-ic'></use>" +
+              "<use xlink:href='img/icons/sprite/sprite.svg#minus-ic'></use>" +
               "</svg>" +
               "</div>" +
               "</div>", {
@@ -148,7 +148,7 @@ if(locationTabs) {
         ymaps.ready(() => {
           let thirdMapPlacemark = new ymaps.Placemark([53.89415735177822,27.5500537901783], {}, {
             iconLayout: "default#image",
-            iconImageHref: "img/map-pin.svg",
+            iconImageHref: "img/icons/map-pin.svg",
             iconImageSize: [106, 107],
             iconImageOffset: [-50, -90]
           });
@@ -163,12 +163,12 @@ if(locationTabs) {
               "<div>" +
               "<div id='third-map-zoom-in' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-in'>" +
               "<svg width='20' height='20' aria-hidden='true'>" +
-              "<use xlink:href='img/sprite.svg#plus-ic'></use>" +
+              "<use xlink:href='img/icons/sprite/sprite.svg#plus-ic'></use>" +
               "</svg>" +
               "</div>" +
               "<div id='third-map-zoom-out' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-out'>" +
               "<svg width='20' height='20' aria-hidden='true'>" +
-              "<use xlink:href='img/sprite.svg#minus-ic'></use>" +
+              "<use xlink:href='img/icons/sprite/sprite.svg#minus-ic'></use>" +
               "</svg>" +
               "</div>" +
               "</div>", {

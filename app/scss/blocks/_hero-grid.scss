@@ -33,7 +33,7 @@
 .hero-grid__decor:nth-child(1) {
   background-image:
     url("data:image/svg+xml,%3Csvg width='213' height='123' viewBox='0 0 213 123' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='213' height='123' fill='%23E3E2DF'/%3E%3C/svg%3E"),
-    url("../img/holiday-cupcakes.jpg");
+    url("../img/decor/holiday-cupcakes.jpg");
   background-position:
     top 64% left 0,
     top calc(64% + 79px + 140px) center;
@@ -49,7 +49,7 @@
     height: 198px;
     background-image:
       url("data:image/svg+xml,%3Csvg width='70' height='198' viewBox='0 0 70 198' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='70' height='198' fill='%23FFF0E2'/%3E%3C/svg%3E"),
-      url("../img/cupcake.png");
+      url("../img/decor/cupcake.png");
     background-position:
       top left,
       bottom right;
@@ -61,7 +61,7 @@
       width: calc(var(--side-gap) + 15px);
       background-image:
         url("data:image/svg+xml,%3Csvg width='70' height='100%' viewBox='0 0 70 100%' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='70' height='100%' fill='%23FFF0E2'/%3E%3C/svg%3E"),
-        url("../img/cupcake.png");
+        url("../img/decor/cupcake.png");
       background-size: 33.2% 100%, 66.8% auto;
     }
 
@@ -162,7 +162,7 @@
     top: 0;
     width: 161px;
     height: var(--header-height);
-    background-image: url("../img/doughnut.jpg");
+    background-image: url("../img/decor/doughnut.jpg");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -411,7 +411,7 @@
     bottom: 20px;
     width: 288px;
     height: 80px;
-    background-image: url("../img/cookie.png");
+    background-image: url("../img/decor/cookie.png");
     background-position: 0 0;
     background-size: cover;
     background-repeat: no-repeat;

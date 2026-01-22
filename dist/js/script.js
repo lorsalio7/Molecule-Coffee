@@ -251,7 +251,7 @@ if (locationTabs) {
         ymaps.ready(function () {
           var firstMapPlacemark = new ymaps.Placemark([53.91158508909563, 27.59594398101469], {}, {
             iconLayout: "default#image",
-            iconImageHref: "img/map-pin.svg",
+            iconImageHref: "img/icons/map-pin.svg",
             iconImageSize: [106, 107],
             iconImageOffset: [-50, -80]
           });
@@ -261,7 +261,7 @@ if (locationTabs) {
               controls: [],
               type: "yandex#map"
             }),
-            ZoomLayout = ymaps.templateLayoutFactory.createClass("<div>" + "<div id='first-map-zoom-in' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-in'>" + "<svg width='20' height='20' aria-hidden='true'>" + "<use xlink:href='img/sprite.svg#plus-ic'></use>" + "</svg>" + "</div>" + "<div id='first-map-zoom-out' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-out'>" + "<svg width='20' height='20' aria-hidden='true'>" + "<use xlink:href='img/sprite.svg#minus-ic'></use>" + "</svg>" + "</div>" + "</div>", {
+            ZoomLayout = ymaps.templateLayoutFactory.createClass("<div>" + "<div id='first-map-zoom-in' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-in'>" + "<svg width='20' height='20' aria-hidden='true'>" + "<use xlink:href='img/icons/sprite/sprite.svg#plus-ic'></use>" + "</svg>" + "</div>" + "<div id='first-map-zoom-out' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-out'>" + "<svg width='20' height='20' aria-hidden='true'>" + "<use xlink:href='img/icons/sprite/sprite.svg#minus-ic'></use>" + "</svg>" + "</div>" + "</div>", {
               // Переопределяем методы макета, чтобы выполнять дополнительные действия
               // при построении и очистке макета.
               build: function build() {
@@ -305,7 +305,7 @@ if (locationTabs) {
         ymaps.ready(function () {
           var secondMapPlacemark = new ymaps.Placemark([53.90560630126001, 27.532580720901436], {}, {
             iconLayout: "default#image",
-            iconImageHref: "img/map-pin.svg",
+            iconImageHref: "img/icons/map-pin.svg",
             iconImageSize: [106, 107],
             iconImageOffset: [-30, -75]
           });
@@ -315,7 +315,7 @@ if (locationTabs) {
               controls: [],
               type: "yandex#map"
             }),
-            ZoomLayout = ymaps.templateLayoutFactory.createClass("<div>" + "<div id='second-map-zoom-in' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-in'>" + "<svg width='20' height='20' aria-hidden='true'>" + "<use xlink:href='img/sprite.svg#plus-ic'></use>" + "</svg>" + "</div>" + "<div id='second-map-zoom-out' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-out'>" + "<svg width='20' height='20' aria-hidden='true'>" + "<use xlink:href='img/sprite.svg#minus-ic'></use>" + "</svg>" + "</div>" + "</div>", {
+            ZoomLayout = ymaps.templateLayoutFactory.createClass("<div>" + "<div id='second-map-zoom-in' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-in'>" + "<svg width='20' height='20' aria-hidden='true'>" + "<use xlink:href='img/icons/sprite/sprite.svg#plus-ic'></use>" + "</svg>" + "</div>" + "<div id='second-map-zoom-out' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-out'>" + "<svg width='20' height='20' aria-hidden='true'>" + "<use xlink:href='img/icons/sprite/sprite.svg#minus-ic'></use>" + "</svg>" + "</div>" + "</div>", {
               // Переопределяем методы макета, чтобы выполнять дополнительные действия
               // при построении и очистке макета.
               build: function build() {
@@ -359,7 +359,7 @@ if (locationTabs) {
         ymaps.ready(function () {
           var thirdMapPlacemark = new ymaps.Placemark([53.89415735177822, 27.5500537901783], {}, {
             iconLayout: "default#image",
-            iconImageHref: "img/map-pin.svg",
+            iconImageHref: "img/icons/map-pin.svg",
             iconImageSize: [106, 107],
             iconImageOffset: [-50, -90]
           });
@@ -369,7 +369,7 @@ if (locationTabs) {
               controls: [],
               type: "yandex#map"
             }),
-            ZoomLayout = ymaps.templateLayoutFactory.createClass("<div>" + "<div id='third-map-zoom-in' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-in'>" + "<svg width='20' height='20' aria-hidden='true'>" + "<use xlink:href='img/sprite.svg#plus-ic'></use>" + "</svg>" + "</div>" + "<div id='third-map-zoom-out' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-out'>" + "<svg width='20' height='20' aria-hidden='true'>" + "<use xlink:href='img/sprite.svg#minus-ic'></use>" + "</svg>" + "</div>" + "</div>", {
+            ZoomLayout = ymaps.templateLayoutFactory.createClass("<div>" + "<div id='third-map-zoom-in' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-in'>" + "<svg width='20' height='20' aria-hidden='true'>" + "<use xlink:href='img/icons/sprite/sprite.svg#plus-ic'></use>" + "</svg>" + "</div>" + "<div id='third-map-zoom-out' class='locations-tabs__zoom-button locations-tabs__zoom-button--zoom-out'>" + "<svg width='20' height='20' aria-hidden='true'>" + "<use xlink:href='img/icons/sprite/sprite.svg#minus-ic'></use>" + "</svg>" + "</div>" + "</div>", {
               // Переопределяем методы макета, чтобы выполнять дополнительные действия
               // при построении и очистке макета.
               build: function build() {
